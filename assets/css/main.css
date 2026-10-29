@@ -1,0 +1,7886 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+
+/*
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+	blockquote:before, blockquote:after, q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
+mark {
+	background-color: transparent;
+	color: inherit;
+}
+
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input, select, textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+
+/* Basic */
+
+	@-ms-viewport {
+		width: device-width;
+	}
+
+	html {
+		box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+	body {
+		background: #2e3842;
+	}
+
+		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+			-moz-animation: none !important;
+			-webkit-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+			-moz-transition: none !important;
+			-webkit-transition: none !important;
+			-ms-transition: none !important;
+			transition: none !important;
+		}
+		
+
+	body, input, select, textarea {
+		color: #fff;
+		font-family: "Open Sans", Helvetica, sans-serif;
+		font-size: 15pt;
+		font-weight: 400;
+		letter-spacing: 0.075em;
+		line-height: 1.65em;
+	}
+
+		@media screen and (max-width: 1680px) {
+
+			body, input, select, textarea {
+				font-size: 13pt;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			body, input, select, textarea {
+				font-size: 11pt;
+				letter-spacing: 0.0375em;
+			}
+
+		}
+
+	a {
+		-moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+		transition: color 0.2s ease, border-bottom-color 0.2s ease;
+		border-bottom: dotted 1px;
+		color: inherit;
+		text-decoration: none;
+	}
+
+		a:hover {
+			border-bottom-color: transparent;
+		}
+
+	strong, b {
+		color: #fff;
+		font-weight: 600;
+	}
+
+	em, i {
+		font-style: italic;
+	}
+
+	p {
+		margin: 0 0 2em 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+		font-weight: 800;
+		letter-spacing: 0.225em;
+		line-height: 1em;
+		margin: 0 0 1em 0;
+		text-transform: uppercase;
+	}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+	h2 {
+		font-size: 1.35em;
+		line-height: 1.75em;
+	}
+
+		@media screen and (max-width: 736px) {
+
+			h2 {
+				font-size: 1.1em;
+				line-height: 1.65em;
+			}
+
+		}
+
+	h3 {
+		font-size: 1.15em;
+		line-height: 1.75em;
+	}
+
+		@media screen and (max-width: 736px) {
+
+			h3 {
+				font-size: 1em;
+				line-height: 1.65em;
+			}
+
+		}
+
+	h4 {
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+
+	h5 {
+		font-size: 0.8em;
+		line-height: 1.5em;
+	}
+
+	h6 {
+		font-size: 0.7em;
+		line-height: 1.5em;
+	}
+
+	sub {
+		font-size: 0.8em;
+		position: relative;
+		top: 0.5em;
+	}
+
+	sup {
+		font-size: 0.8em;
+		position: relative;
+		top: -0.5em;
+	}
+
+	hr {
+		border: 0;
+		border-bottom: solid 2px #fff;
+		margin: 3em 0;
+	}
+
+		hr.major {
+			margin: 4.5em 0;
+		}
+
+	blockquote {
+		border-left: solid 4px #fff;
+		font-style: italic;
+		margin: 0 0 2em 0;
+		padding: 0.5em 0 0.5em 2em;
+	}
+
+	code {
+		background: rgba(144, 144, 144, 0.25);
+		border-radius: 3px;
+		font-family: "Courier New", monospace;
+		font-size: 0.9em;
+		letter-spacing: 0;
+		margin: 0 0.25em;
+		padding: 0.25em 0.65em;
+	}
+
+	pre {
+		-webkit-overflow-scrolling: touch;
+		font-family: "Courier New", monospace;
+		font-size: 0.9em;
+		margin: 0 0 2em 0;
+	}
+
+		pre code {
+			display: block;
+			line-height: 1.75em;
+			padding: 1em 1.5em;
+			overflow-x: auto;
+		}
+
+	.align-left {
+		text-align: left;
+	}
+
+	.align-center {
+		text-align: center;
+	}
+
+	.align-right {
+		text-align: right;
+	}
+
+/* Row */
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		align-items: stretch;
+	}
+
+		.row > * {
+			box-sizing: border-box;
+		}
+
+		.row.gtr-uniform > * > :last-child {
+			margin-bottom: 0;
+		}
+
+		.row.aln-left {
+			justify-content: flex-start;
+		}
+
+		.row.aln-center {
+			justify-content: center;
+		}
+
+		.row.aln-right {
+			justify-content: flex-end;
+		}
+
+		.row.aln-top {
+			align-items: flex-start;
+		}
+
+		.row.aln-middle {
+			align-items: center;
+		}
+
+		.row.aln-bottom {
+			align-items: flex-end;
+		}
+
+		.row > .imp {
+			order: -1;
+		}
+
+		.row > .col-1 {
+			width: 8.33333%;
+		}
+
+		.row > .off-1 {
+			margin-left: 8.33333%;
+		}
+
+		.row > .col-2 {
+			width: 16.66667%;
+		}
+
+		.row > .off-2 {
+			margin-left: 16.66667%;
+		}
+
+		.row > .col-3 {
+			width: 25%;
+		}
+
+		.row > .off-3 {
+			margin-left: 25%;
+		}
+
+		.row > .col-4 {
+			width: 33.33333%;
+		}
+
+		.row > .off-4 {
+			margin-left: 33.33333%;
+		}
+
+		.row > .col-5 {
+			width: 41.66667%;
+		}
+
+		.row > .off-5 {
+			margin-left: 41.66667%;
+		}
+
+		.row > .col-6 {
+			width: 50%;
+		}
+
+		.row > .off-6 {
+			margin-left: 50%;
+		}
+
+		.row > .col-7 {
+			width: 58.33333%;
+		}
+
+		.row > .off-7 {
+			margin-left: 58.33333%;
+		}
+
+		.row > .col-8 {
+			width: 66.66667%;
+		}
+
+		.row > .off-8 {
+			margin-left: 66.66667%;
+		}
+
+		.row > .col-9 {
+			width: 75%;
+		}
+
+		.row > .off-9 {
+			margin-left: 75%;
+		}
+
+		.row > .col-10 {
+			width: 83.33333%;
+		}
+
+		.row > .off-10 {
+			margin-left: 83.33333%;
+		}
+
+		.row > .col-11 {
+			width: 91.66667%;
+		}
+
+		.row > .off-11 {
+			margin-left: 91.66667%;
+		}
+
+		.row > .col-12 {
+			width: 100%;
+		}
+
+		.row > .off-12 {
+			margin-left: 100%;
+		}
+
+		.row.gtr-0 {
+			margin-top: 0;
+			margin-left: 0em;
+		}
+
+			.row.gtr-0 > * {
+				padding: 0 0 0 0em;
+			}
+
+			.row.gtr-0.gtr-uniform {
+				margin-top: 0em;
+			}
+
+				.row.gtr-0.gtr-uniform > * {
+					padding-top: 0em;
+				}
+
+		.row.gtr-25 {
+			margin-top: 0;
+			margin-left: -0.375em;
+		}
+
+			.row.gtr-25 > * {
+				padding: 0 0 0 0.375em;
+			}
+
+			.row.gtr-25.gtr-uniform {
+				margin-top: -0.375em;
+			}
+
+				.row.gtr-25.gtr-uniform > * {
+					padding-top: 0.375em;
+				}
+
+		.row.gtr-50 {
+			margin-top: 0;
+			margin-left: -0.75em;
+		}
+
+			.row.gtr-50 > * {
+				padding: 0 0 0 0.75em;
+			}
+
+			.row.gtr-50.gtr-uniform {
+				margin-top: -0.75em;
+			}
+
+				.row.gtr-50.gtr-uniform > * {
+					padding-top: 0.75em;
+				}
+
+		.row {
+			margin-top: 0;
+			margin-left: -1.5em;
+		}
+
+			.row > * {
+				padding: 0 0 0 1.5em;
+			}
+
+			.row.gtr-uniform {
+				margin-top: -1.5em;
+			}
+
+				.row.gtr-uniform > * {
+					padding-top: 1.5em;
+				}
+
+		.row.gtr-150 {
+			margin-top: 0;
+			margin-left: -2.25em;
+		}
+
+			.row.gtr-150 > * {
+				padding: 0 0 0 2.25em;
+			}
+
+			.row.gtr-150.gtr-uniform {
+				margin-top: -2.25em;
+			}
+
+				.row.gtr-150.gtr-uniform > * {
+					padding-top: 2.25em;
+				}
+
+		.row.gtr-200 {
+			margin-top: 0;
+			margin-left: -3em;
+		}
+
+			.row.gtr-200 > * {
+				padding: 0 0 0 3em;
+			}
+
+			.row.gtr-200.gtr-uniform {
+				margin-top: -3em;
+			}
+
+				.row.gtr-200.gtr-uniform > * {
+					padding-top: 3em;
+				}
+
+		@media screen and (max-width: 1680px) {
+
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
+			}
+
+				.row > * {
+					box-sizing: border-box;
+				}
+
+				.row.gtr-uniform > * > :last-child {
+					margin-bottom: 0;
+				}
+
+				.row.aln-left {
+					justify-content: flex-start;
+				}
+
+				.row.aln-center {
+					justify-content: center;
+				}
+
+				.row.aln-right {
+					justify-content: flex-end;
+				}
+
+				.row.aln-top {
+					align-items: flex-start;
+				}
+
+				.row.aln-middle {
+					align-items: center;
+				}
+
+				.row.aln-bottom {
+					align-items: flex-end;
+				}
+
+				.row > .imp-xlarge {
+					order: -1;
+				}
+
+				.row > .col-1-xlarge {
+					width: 8.33333%;
+				}
+
+				.row > .off-1-xlarge {
+					margin-left: 8.33333%;
+				}
+
+				.row > .col-2-xlarge {
+					width: 16.66667%;
+				}
+
+				.row > .off-2-xlarge {
+					margin-left: 16.66667%;
+				}
+
+				.row > .col-3-xlarge {
+					width: 25%;
+				}
+
+				.row > .off-3-xlarge {
+					margin-left: 25%;
+				}
+
+				.row > .col-4-xlarge {
+					width: 33.33333%;
+				}
+
+				.row > .off-4-xlarge {
+					margin-left: 33.33333%;
+				}
+
+				.row > .col-5-xlarge {
+					width: 41.66667%;
+				}
+
+				.row > .off-5-xlarge {
+					margin-left: 41.66667%;
+				}
+
+				.row > .col-6-xlarge {
+					width: 50%;
+				}
+
+				.row > .off-6-xlarge {
+					margin-left: 50%;
+				}
+
+				.row > .col-7-xlarge {
+					width: 58.33333%;
+				}
+
+				.row > .off-7-xlarge {
+					margin-left: 58.33333%;
+				}
+
+				.row > .col-8-xlarge {
+					width: 66.66667%;
+				}
+
+				.row > .off-8-xlarge {
+					margin-left: 66.66667%;
+				}
+
+				.row > .col-9-xlarge {
+					width: 75%;
+				}
+
+				.row > .off-9-xlarge {
+					margin-left: 75%;
+				}
+
+				.row > .col-10-xlarge {
+					width: 83.33333%;
+				}
+
+				.row > .off-10-xlarge {
+					margin-left: 83.33333%;
+				}
+
+				.row > .col-11-xlarge {
+					width: 91.66667%;
+				}
+
+				.row > .off-11-xlarge {
+					margin-left: 91.66667%;
+				}
+
+				.row > .col-12-xlarge {
+					width: 100%;
+				}
+
+				.row > .off-12-xlarge {
+					margin-left: 100%;
+				}
+
+				.row.gtr-0 {
+					margin-top: 0;
+					margin-left: 0em;
+				}
+
+					.row.gtr-0 > * {
+						padding: 0 0 0 0em;
+					}
+
+					.row.gtr-0.gtr-uniform {
+						margin-top: 0em;
+					}
+
+						.row.gtr-0.gtr-uniform > * {
+							padding-top: 0em;
+						}
+
+				.row.gtr-25 {
+					margin-top: 0;
+					margin-left: -0.375em;
+				}
+
+					.row.gtr-25 > * {
+						padding: 0 0 0 0.375em;
+					}
+
+					.row.gtr-25.gtr-uniform {
+						margin-top: -0.375em;
+					}
+
+						.row.gtr-25.gtr-uniform > * {
+							padding-top: 0.375em;
+						}
+
+				.row.gtr-50 {
+					margin-top: 0;
+					margin-left: -0.75em;
+				}
+
+					.row.gtr-50 > * {
+						padding: 0 0 0 0.75em;
+					}
+
+					.row.gtr-50.gtr-uniform {
+						margin-top: -0.75em;
+					}
+
+						.row.gtr-50.gtr-uniform > * {
+							padding-top: 0.75em;
+						}
+
+				.row {
+					margin-top: 0;
+					margin-left: -1.5em;
+				}
+
+					.row > * {
+						padding: 0 0 0 1.5em;
+					}
+
+					.row.gtr-uniform {
+						margin-top: -1.5em;
+					}
+
+						.row.gtr-uniform > * {
+							padding-top: 1.5em;
+						}
+
+				.row.gtr-150 {
+					margin-top: 0;
+					margin-left: -2.25em;
+				}
+
+					.row.gtr-150 > * {
+						padding: 0 0 0 2.25em;
+					}
+
+					.row.gtr-150.gtr-uniform {
+						margin-top: -2.25em;
+					}
+
+						.row.gtr-150.gtr-uniform > * {
+							padding-top: 2.25em;
+						}
+
+				.row.gtr-200 {
+					margin-top: 0;
+					margin-left: -3em;
+				}
+
+					.row.gtr-200 > * {
+						padding: 0 0 0 3em;
+					}
+
+					.row.gtr-200.gtr-uniform {
+						margin-top: -3em;
+					}
+
+						.row.gtr-200.gtr-uniform > * {
+							padding-top: 3em;
+						}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
+			}
+
+				.row > * {
+					box-sizing: border-box;
+				}
+
+				.row.gtr-uniform > * > :last-child {
+					margin-bottom: 0;
+				}
+
+				.row.aln-left {
+					justify-content: flex-start;
+				}
+
+				.row.aln-center {
+					justify-content: center;
+				}
+
+				.row.aln-right {
+					justify-content: flex-end;
+				}
+
+				.row.aln-top {
+					align-items: flex-start;
+				}
+
+				.row.aln-middle {
+					align-items: center;
+				}
+
+				.row.aln-bottom {
+					align-items: flex-end;
+				}
+
+				.row > .imp-large {
+					order: -1;
+				}
+
+				.row > .col-1-large {
+					width: 8.33333%;
+				}
+
+				.row > .off-1-large {
+					margin-left: 8.33333%;
+				}
+
+				.row > .col-2-large {
+					width: 16.66667%;
+				}
+
+				.row > .off-2-large {
+					margin-left: 16.66667%;
+				}
+
+				.row > .col-3-large {
+					width: 25%;
+				}
+
+				.row > .off-3-large {
+					margin-left: 25%;
+				}
+
+				.row > .col-4-large {
+					width: 33.33333%;
+				}
+
+				.row > .off-4-large {
+					margin-left: 33.33333%;
+				}
+
+				.row > .col-5-large {
+					width: 41.66667%;
+				}
+
+				.row > .off-5-large {
+					margin-left: 41.66667%;
+				}
+
+				.row > .col-6-large {
+					width: 50%;
+				}
+
+				.row > .off-6-large {
+					margin-left: 50%;
+				}
+
+				.row > .col-7-large {
+					width: 58.33333%;
+				}
+
+				.row > .off-7-large {
+					margin-left: 58.33333%;
+				}
+
+				.row > .col-8-large {
+					width: 66.66667%;
+				}
+
+				.row > .off-8-large {
+					margin-left: 66.66667%;
+				}
+
+				.row > .col-9-large {
+					width: 75%;
+				}
+
+				.row > .off-9-large {
+					margin-left: 75%;
+				}
+
+				.row > .col-10-large {
+					width: 83.33333%;
+				}
+
+				.row > .off-10-large {
+					margin-left: 83.33333%;
+				}
+
+				.row > .col-11-large {
+					width: 91.66667%;
+				}
+
+				.row > .off-11-large {
+					margin-left: 91.66667%;
+				}
+
+				.row > .col-12-large {
+					width: 100%;
+				}
+
+				.row > .off-12-large {
+					margin-left: 100%;
+				}
+
+				.row.gtr-0 {
+					margin-top: 0;
+					margin-left: 0em;
+				}
+
+					.row.gtr-0 > * {
+						padding: 0 0 0 0em;
+					}
+
+					.row.gtr-0.gtr-uniform {
+						margin-top: 0em;
+					}
+
+						.row.gtr-0.gtr-uniform > * {
+							padding-top: 0em;
+						}
+
+				.row.gtr-25 {
+					margin-top: 0;
+					margin-left: -0.375em;
+				}
+
+					.row.gtr-25 > * {
+						padding: 0 0 0 0.375em;
+					}
+
+					.row.gtr-25.gtr-uniform {
+						margin-top: -0.375em;
+					}
+
+						.row.gtr-25.gtr-uniform > * {
+							padding-top: 0.375em;
+						}
+
+				.row.gtr-50 {
+					margin-top: 0;
+					margin-left: -0.75em;
+				}
+
+					.row.gtr-50 > * {
+						padding: 0 0 0 0.75em;
+					}
+
+					.row.gtr-50.gtr-uniform {
+						margin-top: -0.75em;
+					}
+
+						.row.gtr-50.gtr-uniform > * {
+							padding-top: 0.75em;
+						}
+
+				.row {
+					margin-top: 0;
+					margin-left: -1.5em;
+				}
+
+					.row > * {
+						padding: 0 0 0 1.5em;
+					}
+
+					.row.gtr-uniform {
+						margin-top: -1.5em;
+					}
+
+						.row.gtr-uniform > * {
+							padding-top: 1.5em;
+						}
+
+				.row.gtr-150 {
+					margin-top: 0;
+					margin-left: -2.25em;
+				}
+
+					.row.gtr-150 > * {
+						padding: 0 0 0 2.25em;
+					}
+
+					.row.gtr-150.gtr-uniform {
+						margin-top: -2.25em;
+					}
+
+						.row.gtr-150.gtr-uniform > * {
+							padding-top: 2.25em;
+						}
+
+				.row.gtr-200 {
+					margin-top: 0;
+					margin-left: -3em;
+				}
+
+					.row.gtr-200 > * {
+						padding: 0 0 0 3em;
+					}
+
+					.row.gtr-200.gtr-uniform {
+						margin-top: -3em;
+					}
+
+						.row.gtr-200.gtr-uniform > * {
+							padding-top: 3em;
+						}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
+			}
+
+				.row > * {
+					box-sizing: border-box;
+				}
+
+				.row.gtr-uniform > * > :last-child {
+					margin-bottom: 0;
+				}
+
+				.row.aln-left {
+					justify-content: flex-start;
+				}
+
+				.row.aln-center {
+					justify-content: center;
+				}
+
+				.row.aln-right {
+					justify-content: flex-end;
+				}
+
+				.row.aln-top {
+					align-items: flex-start;
+				}
+
+				.row.aln-middle {
+					align-items: center;
+				}
+
+				.row.aln-bottom {
+					align-items: flex-end;
+				}
+
+				.row > .imp-medium {
+					order: -1;
+				}
+
+				.row > .col-1-medium {
+					width: 8.33333%;
+				}
+
+				.row > .off-1-medium {
+					margin-left: 8.33333%;
+				}
+
+				.row > .col-2-medium {
+					width: 16.66667%;
+				}
+
+				.row > .off-2-medium {
+					margin-left: 16.66667%;
+				}
+
+				.row > .col-3-medium {
+					width: 25%;
+				}
+
+				.row > .off-3-medium {
+					margin-left: 25%;
+				}
+
+				.row > .col-4-medium {
+					width: 33.33333%;
+				}
+
+				.row > .off-4-medium {
+					margin-left: 33.33333%;
+				}
+
+				.row > .col-5-medium {
+					width: 41.66667%;
+				}
+
+				.row > .off-5-medium {
+					margin-left: 41.66667%;
+				}
+
+				.row > .col-6-medium {
+					width: 50%;
+				}
+
+				.row > .off-6-medium {
+					margin-left: 50%;
+				}
+
+				.row > .col-7-medium {
+					width: 58.33333%;
+				}
+
+				.row > .off-7-medium {
+					margin-left: 58.33333%;
+				}
+
+				.row > .col-8-medium {
+					width: 66.66667%;
+				}
+
+				.row > .off-8-medium {
+					margin-left: 66.66667%;
+				}
+
+				.row > .col-9-medium {
+					width: 75%;
+				}
+
+				.row > .off-9-medium {
+					margin-left: 75%;
+				}
+
+				.row > .col-10-medium {
+					width: 83.33333%;
+				}
+
+				.row > .off-10-medium {
+					margin-left: 83.33333%;
+				}
+
+				.row > .col-11-medium {
+					width: 91.66667%;
+				}
+
+				.row > .off-11-medium {
+					margin-left: 91.66667%;
+				}
+
+				.row > .col-12-medium {
+					width: 100%;
+				}
+
+				.row > .off-12-medium {
+					margin-left: 100%;
+				}
+
+				.row.gtr-0 {
+					margin-top: 0;
+					margin-left: 0em;
+				}
+
+					.row.gtr-0 > * {
+						padding: 0 0 0 0em;
+					}
+
+					.row.gtr-0.gtr-uniform {
+						margin-top: 0em;
+					}
+
+						.row.gtr-0.gtr-uniform > * {
+							padding-top: 0em;
+						}
+
+				.row.gtr-25 {
+					margin-top: 0;
+					margin-left: -0.375em;
+				}
+
+					.row.gtr-25 > * {
+						padding: 0 0 0 0.375em;
+					}
+
+					.row.gtr-25.gtr-uniform {
+						margin-top: -0.375em;
+					}
+
+						.row.gtr-25.gtr-uniform > * {
+							padding-top: 0.375em;
+						}
+
+				.row.gtr-50 {
+					margin-top: 0;
+					margin-left: -0.75em;
+				}
+
+					.row.gtr-50 > * {
+						padding: 0 0 0 0.75em;
+					}
+
+					.row.gtr-50.gtr-uniform {
+						margin-top: -0.75em;
+					}
+
+						.row.gtr-50.gtr-uniform > * {
+							padding-top: 0.75em;
+						}
+
+				.row {
+					margin-top: 0;
+					margin-left: -1.5em;
+				}
+
+					.row > * {
+						padding: 0 0 0 1.5em;
+					}
+
+					.row.gtr-uniform {
+						margin-top: -1.5em;
+					}
+
+						.row.gtr-uniform > * {
+							padding-top: 1.5em;
+						}
+
+				.row.gtr-150 {
+					margin-top: 0;
+					margin-left: -2.25em;
+				}
+
+					.row.gtr-150 > * {
+						padding: 0 0 0 2.25em;
+					}
+
+					.row.gtr-150.gtr-uniform {
+						margin-top: -2.25em;
+					}
+
+						.row.gtr-150.gtr-uniform > * {
+							padding-top: 2.25em;
+						}
+
+				.row.gtr-200 {
+					margin-top: 0;
+					margin-left: -3em;
+				}
+
+					.row.gtr-200 > * {
+						padding: 0 0 0 3em;
+					}
+
+					.row.gtr-200.gtr-uniform {
+						margin-top: -3em;
+					}
+
+						.row.gtr-200.gtr-uniform > * {
+							padding-top: 3em;
+						}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
+			}
+
+				.row > * {
+					box-sizing: border-box;
+				}
+
+				.row.gtr-uniform > * > :last-child {
+					margin-bottom: 0;
+				}
+
+				.row.aln-left {
+					justify-content: flex-start;
+				}
+
+				.row.aln-center {
+					justify-content: center;
+				}
+
+				.row.aln-right {
+					justify-content: flex-end;
+				}
+
+				.row.aln-top {
+					align-items: flex-start;
+				}
+
+				.row.aln-middle {
+					align-items: center;
+				}
+
+				.row.aln-bottom {
+					align-items: flex-end;
+				}
+
+				.row > .imp-small {
+					order: -1;
+				}
+
+				.row > .col-1-small {
+					width: 8.33333%;
+				}
+
+				.row > .off-1-small {
+					margin-left: 8.33333%;
+				}
+
+				.row > .col-2-small {
+					width: 16.66667%;
+				}
+
+				.row > .off-2-small {
+					margin-left: 16.66667%;
+				}
+
+				.row > .col-3-small {
+					width: 25%;
+				}
+
+				.row > .off-3-small {
+					margin-left: 25%;
+				}
+
+				.row > .col-4-small {
+					width: 33.33333%;
+				}
+
+				.row > .off-4-small {
+					margin-left: 33.33333%;
+				}
+
+				.row > .col-5-small {
+					width: 41.66667%;
+				}
+
+				.row > .off-5-small {
+					margin-left: 41.66667%;
+				}
+
+				.row > .col-6-small {
+					width: 50%;
+				}
+
+				.row > .off-6-small {
+					margin-left: 50%;
+				}
+
+				.row > .col-7-small {
+					width: 58.33333%;
+				}
+
+				.row > .off-7-small {
+					margin-left: 58.33333%;
+				}
+
+				.row > .col-8-small {
+					width: 66.66667%;
+				}
+
+				.row > .off-8-small {
+					margin-left: 66.66667%;
+				}
+
+				.row > .col-9-small {
+					width: 75%;
+				}
+
+				.row > .off-9-small {
+					margin-left: 75%;
+				}
+
+				.row > .col-10-small {
+					width: 83.33333%;
+				}
+
+				.row > .off-10-small {
+					margin-left: 83.33333%;
+				}
+
+				.row > .col-11-small {
+					width: 91.66667%;
+				}
+
+				.row > .off-11-small {
+					margin-left: 91.66667%;
+				}
+
+				.row > .col-12-small {
+					width: 100%;
+				}
+
+				.row > .off-12-small {
+					margin-left: 100%;
+				}
+
+				.row.gtr-0 {
+					margin-top: 0;
+					margin-left: 0em;
+				}
+
+					.row.gtr-0 > * {
+						padding: 0 0 0 0em;
+					}
+
+					.row.gtr-0.gtr-uniform {
+						margin-top: 0em;
+					}
+
+						.row.gtr-0.gtr-uniform > * {
+							padding-top: 0em;
+						}
+
+				.row.gtr-25 {
+					margin-top: 0;
+					margin-left: -0.375em;
+				}
+
+					.row.gtr-25 > * {
+						padding: 0 0 0 0.375em;
+					}
+
+					.row.gtr-25.gtr-uniform {
+						margin-top: -0.375em;
+					}
+
+						.row.gtr-25.gtr-uniform > * {
+							padding-top: 0.375em;
+						}
+
+				.row.gtr-50 {
+					margin-top: 0;
+					margin-left: -0.75em;
+				}
+
+					.row.gtr-50 > * {
+						padding: 0 0 0 0.75em;
+					}
+
+					.row.gtr-50.gtr-uniform {
+						margin-top: -0.75em;
+					}
+
+						.row.gtr-50.gtr-uniform > * {
+							padding-top: 0.75em;
+						}
+
+				.row {
+					margin-top: 0;
+					margin-left: -1.5em;
+				}
+
+					.row > * {
+						padding: 0 0 0 1.5em;
+					}
+
+					.row.gtr-uniform {
+						margin-top: -1.5em;
+					}
+
+						.row.gtr-uniform > * {
+							padding-top: 1.5em;
+						}
+
+				.row.gtr-150 {
+					margin-top: 0;
+					margin-left: -2.25em;
+				}
+
+					.row.gtr-150 > * {
+						padding: 0 0 0 2.25em;
+					}
+
+					.row.gtr-150.gtr-uniform {
+						margin-top: -2.25em;
+					}
+
+						.row.gtr-150.gtr-uniform > * {
+							padding-top: 2.25em;
+						}
+
+				.row.gtr-200 {
+					margin-top: 0;
+					margin-left: -3em;
+				}
+
+					.row.gtr-200 > * {
+						padding: 0 0 0 3em;
+					}
+
+					.row.gtr-200.gtr-uniform {
+						margin-top: -3em;
+					}
+
+						.row.gtr-200.gtr-uniform > * {
+							padding-top: 3em;
+						}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
+			}
+
+				.row > * {
+					box-sizing: border-box;
+				}
+
+				.row.gtr-uniform > * > :last-child {
+					margin-bottom: 0;
+				}
+
+				.row.aln-left {
+					justify-content: flex-start;
+				}
+
+				.row.aln-center {
+					justify-content: center;
+				}
+
+				.row.aln-right {
+					justify-content: flex-end;
+				}
+
+				.row.aln-top {
+					align-items: flex-start;
+				}
+
+				.row.aln-middle {
+					align-items: center;
+				}
+
+				.row.aln-bottom {
+					align-items: flex-end;
+				}
+
+				.row > .imp-xsmall {
+					order: -1;
+				}
+
+				.row > .col-1-xsmall {
+					width: 8.33333%;
+				}
+
+				.row > .off-1-xsmall {
+					margin-left: 8.33333%;
+				}
+
+				.row > .col-2-xsmall {
+					width: 16.66667%;
+				}
+
+				.row > .off-2-xsmall {
+					margin-left: 16.66667%;
+				}
+
+				.row > .col-3-xsmall {
+					width: 25%;
+				}
+
+				.row > .off-3-xsmall {
+					margin-left: 25%;
+				}
+
+				.row > .col-4-xsmall {
+					width: 33.33333%;
+				}
+
+				.row > .off-4-xsmall {
+					margin-left: 33.33333%;
+				}
+
+				.row > .col-5-xsmall {
+					width: 41.66667%;
+				}
+
+				.row > .off-5-xsmall {
+					margin-left: 41.66667%;
+				}
+
+				.row > .col-6-xsmall {
+					width: 50%;
+				}
+
+				.row > .off-6-xsmall {
+					margin-left: 50%;
+				}
+
+				.row > .col-7-xsmall {
+					width: 58.33333%;
+				}
+
+				.row > .off-7-xsmall {
+					margin-left: 58.33333%;
+				}
+
+				.row > .col-8-xsmall {
+					width: 66.66667%;
+				}
+
+				.row > .off-8-xsmall {
+					margin-left: 66.66667%;
+				}
+
+				.row > .col-9-xsmall {
+					width: 75%;
+				}
+
+				.row > .off-9-xsmall {
+					margin-left: 75%;
+				}
+
+				.row > .col-10-xsmall {
+					width: 83.33333%;
+				}
+
+				.row > .off-10-xsmall {
+					margin-left: 83.33333%;
+				}
+
+				.row > .col-11-xsmall {
+					width: 91.66667%;
+				}
+
+				.row > .off-11-xsmall {
+					margin-left: 91.66667%;
+				}
+
+				.row > .col-12-xsmall {
+					width: 100%;
+				}
+
+				.row > .off-12-xsmall {
+					margin-left: 100%;
+				}
+
+				.row.gtr-0 {
+					margin-top: 0;
+					margin-left: 0em;
+				}
+
+					.row.gtr-0 > * {
+						padding: 0 0 0 0em;
+					}
+
+					.row.gtr-0.gtr-uniform {
+						margin-top: 0em;
+					}
+
+						.row.gtr-0.gtr-uniform > * {
+							padding-top: 0em;
+						}
+
+				.row.gtr-25 {
+					margin-top: 0;
+					margin-left: -0.375em;
+				}
+
+					.row.gtr-25 > * {
+						padding: 0 0 0 0.375em;
+					}
+
+					.row.gtr-25.gtr-uniform {
+						margin-top: -0.375em;
+					}
+
+						.row.gtr-25.gtr-uniform > * {
+							padding-top: 0.375em;
+						}
+
+				.row.gtr-50 {
+					margin-top: 0;
+					margin-left: -0.75em;
+				}
+
+					.row.gtr-50 > * {
+						padding: 0 0 0 0.75em;
+					}
+
+					.row.gtr-50.gtr-uniform {
+						margin-top: -0.75em;
+					}
+
+						.row.gtr-50.gtr-uniform > * {
+							padding-top: 0.75em;
+						}
+
+				.row {
+					margin-top: 0;
+					margin-left: -1.5em;
+				}
+
+					.row > * {
+						padding: 0 0 0 1.5em;
+					}
+
+					.row.gtr-uniform {
+						margin-top: -1.5em;
+					}
+
+						.row.gtr-uniform > * {
+							padding-top: 1.5em;
+						}
+
+				.row.gtr-150 {
+					margin-top: 0;
+					margin-left: -2.25em;
+				}
+
+					.row.gtr-150 > * {
+						padding: 0 0 0 2.25em;
+					}
+
+					.row.gtr-150.gtr-uniform {
+						margin-top: -2.25em;
+					}
+
+						.row.gtr-150.gtr-uniform > * {
+							padding-top: 2.25em;
+						}
+
+				.row.gtr-200 {
+					margin-top: 0;
+					margin-left: -3em;
+				}
+
+					.row.gtr-200 > * {
+						padding: 0 0 0 3em;
+					}
+
+					.row.gtr-200.gtr-uniform {
+						margin-top: -3em;
+					}
+
+						.row.gtr-200.gtr-uniform > * {
+							padding-top: 3em;
+						}
+
+		}
+
+/* Section/Article */
+
+	section.special, article.special {
+		text-align: center;
+	}
+
+	header p {
+		color: rgba(255, 255, 255, 0.5);
+		position: relative;
+		top: -0.25em;
+	}
+
+	header h3 + p {
+		font-size: 1.1em;
+	}
+
+	header h4 + p,
+	header h5 + p,
+	header h6 + p {
+		font-size: 0.9em;
+	}
+
+	header.major {
+		margin: 0 0 3.5em 0;
+	}
+
+		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
+			border-bottom: solid 2px #fff;
+			display: inline-block;
+			padding-bottom: 1em;
+			position: relative;
+		}
+
+			header.major h2:after, header.major h3:after, header.major h4:after, header.major h5:after, header.major h6:after {
+				content: '';
+				display: block;
+				height: 1px;
+			}
+
+		header.major p {
+			color: #fff;
+			top: 0;
+		}
+
+		@media screen and (max-width: 736px) {
+
+			header.major {
+				margin: 0 0 2em 0;
+			}
+
+		}
+
+	@media screen and (max-width: 980px) {
+
+		header br {
+			display: none;
+		}
+
+	}
+
+/* Form */
+
+	form {
+		margin: 0 0 2em 0;
+	}
+
+	label {
+		color: #fff;
+		display: block;
+		font-size: 0.9em;
+		font-weight: 600;
+		margin: 0 0 1em 0;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		background-color: rgba(144, 144, 144, 0.25);
+		border-radius: 3px;
+		border: none;
+		color: inherit;
+		display: block;
+		outline: 0;
+		padding: 0 1em;
+		text-decoration: none;
+		width: 100%;
+	}
+
+		input[type="text"]:invalid,
+		input[type="password"]:invalid,
+		input[type="email"]:invalid,
+		select:invalid,
+		textarea:invalid {
+			box-shadow: none;
+		}
+
+		input[type="text"]:focus,
+		input[type="password"]:focus,
+		input[type="email"]:focus,
+		select:focus,
+		textarea:focus {
+			box-shadow: 0 0 0 2px #21b2a6;
+		}
+
+	select {
+		background-size: 1.25em;
+		background-repeat: no-repeat;
+		background-position: calc(100% - 1em) center;
+		height: 2.75em;
+		padding-right: 2.75em;
+		text-overflow: ellipsis;
+	}
+
+		select:focus::-ms-value {
+			background-color: transparent;
+		}
+
+		select::-ms-expand {
+			display: none;
+		}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select {
+		height: 2.75em;
+	}
+
+	textarea {
+		padding: 0.75em 1em;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		display: block;
+		float: left;
+		margin-right: -2em;
+		opacity: 0;
+		width: 1em;
+		z-index: -1;
+	}
+
+		input[type="checkbox"] + label,
+		input[type="radio"] + label {
+			text-decoration: none;
+			color: #fff;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 1em;
+			font-weight: 400;
+			padding-left: 2.4em;
+			padding-right: 0.75em;
+			position: relative;
+		}
+
+			input[type="checkbox"] + label:before,
+			input[type="radio"] + label:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				display: inline-block;
+				font-style: normal;
+				font-variant: normal;
+				text-rendering: auto;
+				line-height: 1;
+				text-transform: none !important;
+				font-family: 'Font Awesome 5 Free';
+				font-weight: 900;
+			}
+
+			input[type="checkbox"] + label:before,
+			input[type="radio"] + label:before {
+				background: rgba(144, 144, 144, 0.25);
+				border-radius: 3px;
+				content: '';
+				display: inline-block;
+				font-size: 0.8em;
+				height: 2.0625em;
+				left: 0;
+				line-height: 2.0625em;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				width: 2.0625em;
+			}
+
+		input[type="checkbox"]:checked + label:before,
+		input[type="radio"]:checked + label:before {
+			background: #2e3842;
+			color: #fff;
+			content: '\f00c';
+		}
+
+		input[type="checkbox"]:focus + label:before,
+		input[type="radio"]:focus + label:before {
+			box-shadow: 0 0 0 2px #21b2a6;
+		}
+
+	input[type="checkbox"] + label:before {
+		border-radius: 3px;
+	}
+
+	input[type="radio"] + label:before {
+		border-radius: 100%;
+	}
+
+	::-webkit-input-placeholder {
+		color: rgba(255, 255, 255, 0.5) !important;
+		opacity: 1.0;
+	}
+
+	:-moz-placeholder {
+		color: rgba(255, 255, 255, 0.5) !important;
+		opacity: 1.0;
+	}
+
+	::-moz-placeholder {
+		color: rgba(255, 255, 255, 0.5) !important;
+		opacity: 1.0;
+	}
+
+	:-ms-input-placeholder {
+		color: rgba(255, 255, 255, 0.5) !important;
+		opacity: 1.0;
+	}
+
+/* Box */
+
+	.box {
+		border-radius: 3px;
+		border: solid 2px #fff;
+		margin-bottom: 2em;
+		padding: 1.5em;
+	}
+
+		.box > :last-child,
+		.box > :last-child > :last-child,
+		.box > :last-child > :last-child > :last-child {
+			margin-bottom: 0;
+		}
+
+		.box.alt {
+			border: 0;
+			border-radius: 0;
+			padding: 0;
+		}
+
+/* Icon */
+
+	.icon {
+		text-decoration: none;
+		border-bottom: none;
+		position: relative;
+	}
+
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 400;
+		}
+
+		.icon > .label {
+			display: none;
+		}
+
+		.icon:before {
+			line-height: inherit;
+		}
+
+		.icon.solid:before {
+			font-weight: 900;
+		}
+
+		.icon.brands:before {
+			font-family: 'Font Awesome 5 Brands';
+		}
+
+		.icon.major {
+			-moz-transform: rotate(-45deg);
+			-webkit-transform: rotate(-45deg);
+			-ms-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+			border-radius: 3px;
+			border: solid 2px #fff;
+			display: inline-block;
+			font-size: 1.35em;
+			height: calc(3em + 2px);
+			line-height: 3em;
+			text-align: center;
+			width: calc(3em + 2px);
+		}
+
+			.icon.major:before {
+				-moz-transform: rotate(45deg);
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+				display: inline-block;
+				font-size: 1.5em;
+			}
+
+			@media screen and (max-width: 736px) {
+
+				.icon.major {
+					font-size: 1em;
+				}
+
+			}
+
+		.icon.style1 {
+			color: #00ffcc;
+		}
+
+		.icon.style2 {
+			color: #00f0ff;
+		}
+
+		.icon.style3 {
+			color: #76ddff;
+		}
+
+/* Image */
+
+	.image {
+		border-radius: 3px;
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+
+		.image img {
+			border-radius: 3px;
+			display: block;
+		}
+
+		.image.left {
+			float: left;
+			margin: 0 2em 2em 0;
+			top: 0.25em;
+		}
+
+		.image.right {
+			float: right;
+			margin: 0 0 2em 2em;
+			top: 0.25em;
+		}
+
+		.image.left, .image.right {
+			max-width: 40%;
+		}
+
+			.image.left img, .image.right img {
+				width: 100%;
+			}
+
+		.image.fit {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+			.image.fit img {
+				width: 100%;
+			}
+
+/* List */
+
+	ol {
+		list-style: decimal;
+		margin: 0 0 2em 0;
+		padding-left: 1.25em;
+	}
+
+		ol li {
+			padding-left: 0.25em;
+		}
+
+	ul {
+		list-style: disc;
+		margin: 0 0 2em 0;
+		padding-left: 1em;
+	}
+
+		ul li {
+			padding-left: 0.5em;
+		}
+
+		ul.alt {
+			list-style: none;
+			padding-left: 0;
+		}
+
+			ul.alt li {
+				border-top: solid 1px #fff;
+				padding: 0.5em 0;
+			}
+
+				ul.alt li:first-child {
+					border-top: 0;
+					padding-top: 0;
+				}
+
+	dl {
+		margin: 0 0 2em 0;
+	}
+
+/* Actions */
+
+	ul.actions {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		cursor: default;
+		list-style: none;
+		margin-left: -1em;
+		padding-left: 0;
+	}
+
+		ul.actions li {
+			padding: 0 0 0 1em;
+			vertical-align: middle;
+		}
+
+		ul.actions.special {
+			-moz-justify-content: center;
+			-webkit-justify-content: center;
+			-ms-justify-content: center;
+			justify-content: center;
+			width: 100%;
+			margin-left: 0;
+		}
+
+			ul.actions.special li:first-child {
+				padding-left: 0;
+			}
+
+		ul.actions.stacked {
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			margin-left: 0;
+		}
+
+			ul.actions.stacked li {
+				padding: 1em 0 0 0;
+			}
+
+				ul.actions.stacked li:first-child {
+					padding-top: 0;
+				}
+
+		ul.actions.fit {
+			width: calc(100% + 1em);
+		}
+
+			ul.actions.fit li {
+				-moz-flex-grow: 1;
+				-webkit-flex-grow: 1;
+				-ms-flex-grow: 1;
+				flex-grow: 1;
+				-moz-flex-shrink: 1;
+				-webkit-flex-shrink: 1;
+				-ms-flex-shrink: 1;
+				flex-shrink: 1;
+				width: 100%;
+			}
+
+				ul.actions.fit li > * {
+					width: 100%;
+				}
+
+			ul.actions.fit.stacked {
+				width: 100%;
+			}
+
+		@media screen and (max-width: 480px) {
+
+			ul.actions:not(.fixed) {
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				margin-left: 0;
+				width: 100% !important;
+			}
+
+				ul.actions:not(.fixed) li {
+					-moz-flex-grow: 1;
+					-webkit-flex-grow: 1;
+					-ms-flex-grow: 1;
+					flex-grow: 1;
+					-moz-flex-shrink: 1;
+					-webkit-flex-shrink: 1;
+					-ms-flex-shrink: 1;
+					flex-shrink: 1;
+					padding: 1em 0 0 0;
+					text-align: center;
+					width: 100%;
+				}
+
+					ul.actions:not(.fixed) li > * {
+						width: 100%;
+					}
+
+					ul.actions:not(.fixed) li:first-child {
+						padding-top: 0;
+					}
+
+					ul.actions:not(.fixed) li input[type="submit"],
+					ul.actions:not(.fixed) li input[type="reset"],
+					ul.actions:not(.fixed) li input[type="button"],
+					ul.actions:not(.fixed) li button,
+					ul.actions:not(.fixed) li .button {
+						width: 100%;
+					}
+
+						ul.actions:not(.fixed) li input[type="submit"].icon:before,
+						ul.actions:not(.fixed) li input[type="reset"].icon:before,
+						ul.actions:not(.fixed) li input[type="button"].icon:before,
+						ul.actions:not(.fixed) li button.icon:before,
+						ul.actions:not(.fixed) li .button.icon:before {
+							margin-left: -0.5em;
+						}
+
+		}
+
+/* Icons */
+
+	ul.icons {
+		cursor: default;
+		list-style: none;
+		padding-left: 0;
+	}
+
+		ul.icons li {
+			display: inline-block;
+			padding: 0 1em 0 0;
+		}
+
+			ul.icons li:last-child {
+				padding-right: 0 !important;
+			}
+
+		ul.icons.major {
+			padding: 1em 0;
+		}
+
+			ul.icons.major li {
+				padding-right: 3.5em;
+			}
+
+				@media screen and (max-width: 736px) {
+
+					ul.icons.major li {
+						padding: 0 1em !important;
+					}
+
+				}
+
+/* Table */
+
+	.table-wrapper {
+		-webkit-overflow-scrolling: touch;
+		overflow-x: auto;
+	}
+
+	table {
+		margin: 0 0 2em 0;
+		width: 100%;
+	}
+
+		table tbody tr {
+			border: solid 1px #fff;
+			border-left: 0;
+			border-right: 0;
+		}
+
+			table tbody tr:nth-child(2n + 1) {
+				background-color: rgba(144, 144, 144, 0.25);
+			}
+
+		table td {
+			padding: 0.75em 0.75em;
+		}
+
+		table th {
+			color: #fff;
+			font-size: 0.9em;
+			font-weight: 600;
+			padding: 0 0.75em 0.75em 0.75em;
+			text-align: left;
+		}
+
+		table thead {
+			border-bottom: solid 2px #fff;
+		}
+
+		table tfoot {
+			border-top: solid 2px #fff;
+		}
+
+		table.alt {
+			border-collapse: separate;
+		}
+
+			table.alt tbody tr td {
+				border: solid 1px #fff;
+				border-left-width: 0;
+				border-top-width: 0;
+			}
+
+				table.alt tbody tr td:first-child {
+					border-left-width: 1px;
+				}
+
+			table.alt tbody tr:first-child td {
+				border-top-width: 1px;
+			}
+
+			table.alt thead {
+				border-bottom: 0;
+			}
+
+			table.alt tfoot {
+				border-top: 0;
+			}
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		background-color: transparent;
+		border-radius: 3px;
+		border: 0;
+		box-shadow: inset 0 0 0 2px #fff;
+		color: #fff;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 0.8em;
+		font-weight: 600;
+		height: 3.125em;
+		letter-spacing: 0.225em;
+		line-height: 3.125em;
+		max-width: 30em;
+		padding: 0 2.75em;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		button:hover,
+		.button:hover {
+			background-color: rgba(144, 144, 144, 0.25);
+		}
+
+		input[type="submit"]:active,
+		input[type="reset"]:active,
+		input[type="button"]:active,
+		button:active,
+		.button:active {
+			background-color: rgba(144, 144, 144, 0.5);
+		}
+
+		input[type="submit"].icon:before,
+		input[type="reset"].icon:before,
+		input[type="button"].icon:before,
+		button.icon:before,
+		.button.icon:before {
+			margin-right: 0.5em;
+		}
+
+		input[type="submit"].fit,
+		input[type="reset"].fit,
+		input[type="button"].fit,
+		button.fit,
+		.button.fit {
+			width: 100%;
+		}
+
+		input[type="submit"].small,
+		input[type="reset"].small,
+		input[type="button"].small,
+		button.small,
+		.button.small {
+			font-size: 0.8em;
+		}
+
+		input[type="submit"].large,
+		input[type="reset"].large,
+		input[type="button"].large,
+		button.large,
+		.button.large {
+			font-size: 1.35em;
+		}
+
+		input[type="submit"].primary,
+		input[type="reset"].primary,
+		input[type="button"].primary,
+		button.primary,
+		.button.primary {
+			background-color: #ed4933;
+			box-shadow: none !important;
+			color: #ffffff !important;
+		}
+
+			input[type="submit"].primary:hover,
+			input[type="reset"].primary:hover,
+			input[type="button"].primary:hover,
+			button.primary:hover,
+			.button.primary:hover {
+				background-color: #ef5e4a !important;
+			}
+
+			input[type="submit"].primary:active,
+			input[type="reset"].primary:active,
+			input[type="button"].primary:active,
+			button.primary:active,
+			.button.primary:active {
+				background-color: #eb341c !important;
+			}
+
+		input[type="submit"].disabled, input[type="submit"]:disabled,
+		input[type="reset"].disabled,
+		input[type="reset"]:disabled,
+		input[type="button"].disabled,
+		input[type="button"]:disabled,
+		button.disabled,
+		button:disabled,
+		.button.disabled,
+		.button:disabled {
+			pointer-events: none;
+			opacity: 0.25;
+		}
+
+		@media screen and (max-width: 736px) {
+
+			input[type="submit"],
+			input[type="reset"],
+			input[type="button"],
+			button,
+			.button {
+				height: 3.75em;
+				line-height: 3.75em;
+			}
+
+		}
+
+/* Features */
+
+	.features {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		list-style: none;
+		padding: 0;
+		width: 100%;
+	}
+
+		.features li {
+			padding: 4em 4em 2em 6em ;
+			display: block;
+			position: relative;
+			text-align: left;
+			width: 50%;
+		}
+
+			.features li:nth-child(1),
+            .features li:nth-child(2),
+            .features li:nth-child(3),
+            .features li:nth-child(4),
+            .features li:nth-child(5),
+            .features li:nth-child(6),
+            .features li:nth-child(7),
+            .features li:nth-child(8),
+            .features li:nth-child(9),
+            .features li:nth-child(10) {
+                background-color: transparent;
+            }
+
+			.features li:before {
+				display: block;
+				color: #00ffcc;
+				position: absolute;
+				left: 1.75em;
+				top: 2.75em;
+				font-size: 1.5em;
+			}
+
+			.features li:nth-child(1) {
+				border-top-left-radius: 3px;
+			}
+
+			.features li:nth-child(2) {
+				border-top-right-radius: 3px;
+			}
+
+			.features li:nth-last-child(1) {
+				border-bottom-right-radius: 3px;
+			}
+
+			.features li:nth-last-child(2) {
+				border-bottom-left-radius: 3px;
+			}
+
+			@media screen and (max-width: 980px) {
+
+				.features li {
+					padding: 3em 2em 1em 2em ;
+					text-align: center;
+				}
+
+					.features li:before {
+						left: 0;
+						margin: 0 0 1em 0;
+						position: relative;
+						top: 0;
+					}
+
+			}
+
+			@media screen and (max-width: 736px) {
+
+				.features li {
+					padding: 3em 0 1em 0 ;
+					background-color: transparent !important;
+					border-top: solid 2px #fff;
+					width: 100%;
+				}
+
+					.features li:first-child {
+						border-top: 0;
+					}
+
+			}
+
+/* Spotlight */
+
+	.spotlight {
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+	}
+
+		.spotlight .image {
+			-moz-order: 1;
+			-webkit-order: 1;
+			-ms-order: 1;
+			order: 1;
+			border-radius: 0;
+			width: 40%;
+		}
+
+			.spotlight .image img {
+				border-radius: 0;
+				width: 100%;
+			}
+
+		.spotlight .content {
+			padding: 2em 4em 0.1em 4em ;
+			-moz-order: 2;
+			-webkit-order: 2;
+			-ms-order: 2;
+			order: 2;
+			max-width: 48em;
+			width: 60%;
+		}
+
+		.spotlight:nth-child(2n) {
+			-moz-flex-direction: row-reverse;
+			-webkit-flex-direction: row-reverse;
+			-ms-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+		}
+
+		.spotlight:nth-child(1),
+        .spotlight:nth-child(2),
+        .spotlight:nth-child(3),
+        .spotlight:nth-child(4),
+        .spotlight:nth-child(5),
+        .spotlight:nth-child(6),
+        .spotlight:nth-child(7),
+        .spotlight:nth-child(8),
+        .spotlight:nth-child(9),
+        .spotlight:nth-child(10) {
+            background-color: transparent;
+        }
+		@media screen and (max-width: 1280px) {
+
+			.spotlight .image {
+				width: 45%;
+			}
+
+			.spotlight .content {
+				width: 55%;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.spotlight {
+				display: block;
+			}
+
+				.spotlight br {
+					display: none;
+				}
+
+				.spotlight .image {
+					width: 100%;
+				}
+
+				.spotlight .content {
+					padding: 4em 3em 2em 3em ;
+					max-width: none;
+					text-align: center;
+					width: 100%;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.spotlight .content {
+				padding: 3em 2em 1em 2em ;
+			}
+
+		}
+
+/* Wrapper */
+
+	.wrapper {
+		padding: 6em 0 4em 0 ;
+	}
+
+		.wrapper > .inner {
+			width: 60em;
+			margin: 0 auto;
+		}
+
+			@media screen and (max-width: 1280px) {
+
+				.wrapper > .inner {
+					width: 90%;
+				}
+
+			}
+
+			@media screen and (max-width: 980px) {
+
+				.wrapper > .inner {
+					width: 100%;
+				}
+
+			}
+
+		.wrapper.alt {
+			padding: 0;
+		}
+
+		.wrapper.style1 {
+			background-color: #21b2a6;
+			color: #c8ece9;
+		}
+
+			.wrapper.style1 strong, .wrapper.style1 b {
+				color: #ffffff;
+			}
+
+			.wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
+				color: #ffffff;
+			}
+
+			.wrapper.style1 hr {
+				border-color: rgba(0, 0, 0, 0.125);
+			}
+
+			.wrapper.style1 blockquote {
+				border-color: rgba(0, 0, 0, 0.125);
+			}
+
+			.wrapper.style1 code {
+				background: transparent;
+			}
+
+			.wrapper.style1 header p {
+				color: #a6e0db;
+			}
+
+			.wrapper.style1 header.major h2, .wrapper.style1 header.major h3, .wrapper.style1 header.major h4, .wrapper.style1 header.major h5, .wrapper.style1 header.major h6 {
+				border-color: rgba(0, 0, 0, 0.125);
+			}
+
+			.wrapper.style1 header.major p {
+				color: #c8ece9;
+			}
+
+			.wrapper.style1 label {
+				color: #ffffff;
+			}
+
+			.wrapper.style1 input[type="text"],
+			.wrapper.style1 input[type="password"],
+			.wrapper.style1 input[type="email"],
+			.wrapper.style1 select,
+			.wrapper.style1 textarea {
+				background-color: rgba(255, 255, 255, 0.075);
+			}
+
+			.wrapper.style1 select {
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(0, 0, 0, 0.125)' /%3E%3C/svg%3E");
+			}
+
+				.wrapper.style1 select option {
+					color: #ffffff;
+					background: transparent;
+				}
+
+			.wrapper.style1 input[type="checkbox"] + label,
+			.wrapper.style1 input[type="radio"] + label {
+				color: #c8ece9;
+			}
+
+				.wrapper.style1 input[type="checkbox"] + label:before,
+				.wrapper.style1 input[type="radio"] + label:before {
+					background:transparent
+				}
+
+			.wrapper.style1 input[type="checkbox"]:checked + label:before,
+			.wrapper.style1 input[type="radio"]:checked + label:before {
+				background: #ffffff;
+				color: #21b2a6;
+			}
+
+			.wrapper.style1 ::-webkit-input-placeholder {
+				color: #a6e0db !important;
+			}
+
+			.wrapper.style1 :-moz-placeholder {
+				color: #a6e0db !important;
+			}
+
+			.wrapper.style1 ::-moz-placeholder {
+				color: #a6e0db !important;
+			}
+
+			.wrapper.style1 :-ms-input-placeholder {
+				color: #a6e0db !important;
+			}
+
+			.wrapper.style1 .formerize-placeholder {
+				color: #a6e0db !important;
+			}
+
+			.wrapper.style1 .icon.major {
+				border-color: rgba(0, 0, 0, 0.125);
+			}
+
+			.wrapper.style1 ul.alt li {
+				border-color: rgba(0, 0, 0, 0.125);
+			}
+
+			.wrapper.style1 table tbody tr {
+				border-color: rgba(0, 0, 0, 0.125);
+			}
+
+				.wrapper.style1 table tbody tr:nth-child(2n + 1) {
+					background-color: transparent;
+				}
+
+			.wrapper.style1 table th {
+				color: #ffffff;
+			}
+
+			.wrapper.style1 table thead {
+				border-color: rgba(0, 0, 0, 0.125);
+			}
+
+			.wrapper.style1 table tfoot {
+				border-color: rgba(0, 0, 0, 0.125);
+			}
+
+			.wrapper.style1 table.alt tbody tr td {
+				border-color: rgba(0, 0, 0, 0.125);
+			}
+
+			.wrapper.style1 input[type="submit"],
+			.wrapper.style1 input[type="reset"],
+			.wrapper.style1 input[type="button"],
+			.wrapper.style1 button,
+			.wrapper.style1 .button {
+				box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
+				color: #ffffff;
+			}
+
+				.wrapper.style1 input[type="submit"]:hover,
+				.wrapper.style1 input[type="reset"]:hover,
+				.wrapper.style1 input[type="button"]:hover,
+				.wrapper.style1 button:hover,
+				.wrapper.style1 .button:hover {
+					background-color:transparent;
+				}
+
+				.wrapper.style1 input[type="submit"]:active,
+				.wrapper.style1 input[type="reset"]:active,
+				.wrapper.style1 input[type="button"]:active,
+				.wrapper.style1 button:active,
+				.wrapper.style1 .button:active {
+					background-color: transparent;
+				}
+
+			@media screen and (max-width: 736px) {
+
+				.wrapper.style1 .features li {
+					background-color: transparent !important;
+				}
+
+			}
+
+		.wrapper.style2 {
+			background-color: transparent !important;
+		}
+
+		.wrapper.style3 {
+			background-color: transparent !important;
+			color: #d3d4e4;
+		}
+
+			.wrapper.style3 strong, .wrapper.style3 b {
+				color: #ffffff;
+			}
+
+			.wrapper.style3 h2, .wrapper.style3 h3, .wrapper.style3 h4, .wrapper.style3 h5, .wrapper.style3 h6 {
+				color: #ffffff;
+			}
+
+			.wrapper.style3 hr {
+				background-color: transparent !important;
+			}
+
+			.wrapper.style3 blockquote {
+				background-color: transparent !important;
+			}
+
+			.wrapper.style3 code {
+				background-color: transparent !important;
+			}
+
+			.wrapper.style3 header p {
+				color: #b9bad4;
+			}
+
+			.wrapper.style3 header.major h2, .wrapper.style3 header.major h3, .wrapper.style3 header.major h4, .wrapper.style3 header.major h5, .wrapper.style3 header.major h6 {
+				border-color: rgba(0, 0, 0, 0.125);
+			}
+
+			.wrapper.style3 header.major p {
+				color: #d3d4e4;
+			}
+
+			.wrapper.style3 label {
+				color: #ffffff;
+			}
+
+			.wrapper.style3 input[type="text"],
+			.wrapper.style3 input[type="password"],
+			.wrapper.style3 input[type="email"],
+			.wrapper.style3 select,
+			.wrapper.style3 textarea {
+				background-color: rgba(255, 255, 255, 0.075);
+			}
+
+			.wrapper.style3 select {
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(0, 0, 0, 0.125)' /%3E%3C/svg%3E");
+			}
+
+				.wrapper.style3 select option {
+					color: #ffffff;
+					background: #505393;
+				}
+
+			.wrapper.style3 input[type="checkbox"] + label,
+			.wrapper.style3 input[type="radio"] + label {
+				color: #d3d4e4;
+			}
+
+				.wrapper.style3 input[type="checkbox"] + label:before,
+				.wrapper.style3 input[type="radio"] + label:before {
+					background: rgba(255, 255, 255, 0.075);
+				}
+
+			.wrapper.style3 input[type="checkbox"]:checked + label:before,
+			.wrapper.style3 input[type="radio"]:checked + label:before {
+				background: #ffffff;
+				color: #505393;
+			}
+
+			.wrapper.style3 ::-webkit-input-placeholder {
+				color: #b9bad4 !important;
+			}
+
+			.wrapper.style3 :-moz-placeholder {
+				color: #b9bad4 !important;
+			}
+
+			.wrapper.style3 ::-moz-placeholder {
+				color: #b9bad4 !important;
+			}
+
+			.wrapper.style3 :-ms-input-placeholder {
+				color: #b9bad4 !important;
+			}
+
+			.wrapper.style3 .formerize-placeholder {
+				color: #b9bad4 !important;
+			}
+
+			.wrapper.style3 .icon.major {
+				border-color: rgba(0, 0, 0, 0.125);
+			}
+
+			.wrapper.style3 ul.alt li {
+				border-color: rgba(0, 0, 0, 0.125);
+			}
+
+			.wrapper.style3 table tbody tr {
+				border-color: rgba(0, 0, 0, 0.125);
+			}
+
+				.wrapper.style3 table tbody tr:nth-child(2n + 1) {
+					background-color: rgba(255, 255, 255, 0.075);
+				}
+
+			.wrapper.style3 table th {
+				color: #ffffff;
+			}
+
+			.wrapper.style3 table thead {
+				border-color: rgba(0, 0, 0, 0.125);
+			}
+
+			.wrapper.style3 table tfoot {
+				border-color: rgba(0, 0, 0, 0.125);
+			}
+
+			.wrapper.style3 table.alt tbody tr td {
+				border-color: rgba(0, 0, 0, 0.125);
+			}
+
+			.wrapper.style3 input[type="submit"],
+			.wrapper.style3 input[type="reset"],
+			.wrapper.style3 input[type="button"],
+			.wrapper.style3 button,
+			.wrapper.style3 .button {
+				box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
+				color: #ffffff;
+			}
+
+				.wrapper.style3 input[type="submit"]:hover,
+				.wrapper.style3 input[type="reset"]:hover,
+				.wrapper.style3 input[type="button"]:hover,
+				.wrapper.style3 button:hover,
+				.wrapper.style3 .button:hover {
+					background-color: rgba(255, 255, 255, 0.075);
+				}
+
+				.wrapper.style3 input[type="submit"]:active,
+				.wrapper.style3 input[type="reset"]:active,
+				.wrapper.style3 input[type="button"]:active,
+				.wrapper.style3 button:active,
+				.wrapper.style3 .button:active {
+					background-color: rgba(255, 255, 255, 0.2);
+				}
+
+			@media screen and (max-width: 736px) {
+
+				.wrapper.style3 .features li {
+					border-top-color: transparent !important;
+    }
+				}
+
+#back-to-top {
+				position: fixed;
+				right: 24px;
+				bottom: 24px;
+				z-index: 999;
+				display: inline-flex;
+				width: 46px;
+				height: 46px;
+				align-items: center;
+				justify-content: center;
+				padding: 0 !important;
+				border: 1px solid rgba(255, 255, 255, 0.38);
+				border-radius: 50%;
+				background: transparent !important;
+				box-shadow: none !important;
+				color: #f3f0e8;
+				font-family: Arial, sans-serif;
+				font-size: 1.4rem;
+				line-height: 1;
+				letter-spacing: 0;
+				text-align: center;
+				cursor: pointer;
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(8px);
+				transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease, background 0.2s ease;
+}
+
+#back-to-top.is-visible {
+				opacity: 1;
+				visibility: visible;
+				transform: translateY(0);
+}
+
+#back-to-top:hover {
+				background: rgba(255, 255, 255, 0.07) !important;
+}
+
+#back-to-top:focus-visible {
+				outline: 2px solid #c7b99b;
+				outline-offset: 3px;
+}
+
+@media screen and (max-width: 736px) {
+				#back-to-top {
+    right: 16px;
+    bottom: 16px;
+    width: 42px;
+    height: 42px;
+					font-size: 1.05rem;
+				}
+}
+
+@media (prefers-reduced-motion: reduce) {
+				#back-to-top {
+    transition: none;
+				}
+}
+
+				.credit-project-panel {
+				    display: block;
+				    margin: 1.5rem 0 0;
+				    padding: clamp(1.1rem, 2.8vw, 2rem);
+				    color: rgba(255, 255, 255, 0.84);
+				    background: linear-gradient(115deg, rgba(255, 255, 255, 0.045), rgba(0, 0, 0, 0.22));
+				    border: 1px solid rgba(205, 187, 165, 0.28);
+				    border-radius: 3px;
+				    scroll-margin-top: 1.5rem;
+				}
+
+				.credit-project-panel[hidden] {
+				    display: none !important;
+				}
+
+				.credit-project-panel-header {
+				    display: flex;
+				    align-items: center;
+				    justify-content: space-between;
+				    gap: 1rem;
+				    margin-bottom: 1rem;
+				}
+
+				.credit-project-panel-header h3 {
+				    margin: 0;
+				    color: #e8d8c9;
+				    font-size: clamp(1.1rem, 1.8vw, 1.45rem);
+				    font-weight: 500;
+				    letter-spacing: 0.08em;
+				}
+
+				.credit-project-close {
+				    width: 36px !important;
+				    min-width: 36px !important;
+				    height: 36px !important;
+				    min-height: 36px !important;
+				    padding: 0 !important;
+				    border: 0 !important;
+				    border-radius: 50% !important;
+				    background: transparent !important;
+				    box-shadow: none !important;
+				    color: rgba(255, 255, 255, 0.72) !important;
+				    font-size: 1.5rem !important;
+				    line-height: 1 !important;
+				}
+
+				.credit-project-close:hover {
+				    color: #fff !important;
+				}
+
+				.credit-project-panel-content {
+				    display: grid;
+				    grid-template-columns: minmax(110px, 180px) minmax(0, 1fr);
+				    align-items: start;
+				    gap: clamp(1rem, 3vw, 2rem);
+				}
+
+				.credit-project-image {
+				    display: block;
+				    width: 100%;
+				    max-height: 270px;
+				    object-fit: cover;
+				    object-position: center;
+				}
+
+				.credit-project-description {
+				    min-width: 0;
+				}
+
+				.credit-project-meta {
+				    margin: 0 0 0.9rem;
+				    color: rgba(255, 255, 255, 0.62);
+				    font-size: 0.78rem;
+				    letter-spacing: 0.06em;
+				}
+
+				#credit-project-synopsis {
+				    margin: 0;
+				    color: rgba(255, 255, 255, 0.84);
+				    font-size: 0.95rem;
+				    line-height: 1.75;
+				    white-space: pre-line;
+				}
+
+				.project-festivals {
+				    margin-top: 1rem;
+				    padding-top: 0.75rem;
+				    border-top: 1px solid rgba(255, 255, 255, 0.12);
+				}
+
+				.project-festivals[hidden] {
+				    display: none !important;
+				}
+
+				.project-festivals h3,
+				.project-festivals h4 {
+				    margin: 0 0 0.45rem;
+				    color: rgba(255, 255, 255, 0.8);
+				    font-size: 0.64rem;
+				    font-weight: 500;
+				    letter-spacing: 0.12em;
+				    line-height: 1.5;
+				    text-transform: uppercase;
+				}
+
+				.project-festivals ul {
+				    display: grid;
+				    grid-template-columns: repeat(2, minmax(0, 1fr));
+				    gap: 0.2rem 1rem;
+				    margin: 0;
+				    padding: 0;
+				    list-style: none;
+				}
+
+				.project-festivals li {
+				    color: rgba(255, 255, 255, 0.66);
+				    font-size: 0.64rem;
+				    font-weight: 300;
+				    line-height: 1.5;
+				    letter-spacing: 0.01em;
+				}
+
+				.project-honors {
+				    display: grid;
+				    gap: 0.6rem;
+				    margin-top: 0.8rem;
+				    padding-top: 0.65rem;
+				    border-top: 1px solid rgba(255, 255, 255, 0.12);
+				}
+
+				.project-honors[hidden] {
+				    display: none !important;
+				}
+
+				.project-honors h4 {
+				    margin: 0 0 0.3rem;
+				    color: rgba(255, 255, 255, 0.66);
+				    font-size: 0.64rem;
+				    font-weight: 400;
+				    letter-spacing: 0.1em;
+				    line-height: 1.4;
+				    text-transform: uppercase;
+				}
+
+				.project-honors h5 {
+				    margin: 0 0 0.15rem;
+				    color: rgba(255, 255, 255, 0.6);
+				    font-size: 0.64rem;
+				    font-weight: 400;
+				    letter-spacing: 0.07em;
+				    line-height: 1.35;
+				    text-transform: uppercase;
+				}
+
+				.project-honors ul {
+				    margin: 0;
+				    padding: 0;
+				    list-style: none;
+				}
+
+				.project-honors li {
+				    color: rgba(255, 255, 255, 0.56);
+				    font-size: 0.64rem;
+				    font-weight: 300;
+				    line-height: 1.4;
+				    letter-spacing: 0.01em;
+				}
+
+				.project-honors-awards {
+				    display: grid;
+				    grid-template-columns: repeat(3, minmax(0, 1fr));
+				    gap: 0.45rem;
+				}
+
+				.project-honors-awards li {
+				    display: grid;
+				    align-content: start;
+				    gap: 0.12rem;
+				}
+
+				.project-honors-awards strong {
+				    color: rgba(255, 255, 255, 0.64);
+				    font-size: 0.64rem;
+				    font-weight: 400;
+				    letter-spacing: 0.07em;
+				    text-transform: uppercase;
+				}
+
+				.project-honors-countries {
+				    columns: 3;
+				    column-gap: 0.75rem;
+				}
+
+				.project-honors-countries > div {
+				    break-inside: avoid;
+				    margin: 0 0 0.4rem;
+				}
+
+				#panneau-projet-bo .project-honors {
+				    margin-top: 0.8rem;
+				    padding-top: 0.65rem;
+				    border-top-color: rgba(205, 187, 165, 0.2);
+				}
+
+				#panneau-projet-bo .project-honors h4,
+				#panneau-projet-bo .project-honors h5 {
+				    font-size: 0.64rem;
+				}
+
+				#panneau-projet-bo .project-honors li {
+				    font-size: 0.64rem;
+				}
+
+				#panneau-projet-bo .project-festivals {
+				    margin-top: 0.8rem;
+				    padding-top: 0.65rem;
+				    border-top-color: rgba(205, 187, 165, 0.2);
+				}
+
+				#panneau-projet-bo .project-festivals h3 {
+				    font-size: 0.64rem;
+				}
+
+				#panneau-projet-bo .project-festivals li {
+				    font-size: 0.64rem;
+				}
+
+				@media screen and (max-width: 736px) {
+				    .credit-project-meta {
+				        font-size: 0.72rem;
+				    }
+
+				    #credit-project-synopsis {
+				        font-size: 0.84rem;
+				        line-height: 1.65;
+				    }
+
+				    .project-festivals ul {
+				        grid-template-columns: minmax(0, 1fr);
+				    }
+
+				    .project-honors-awards {
+				        grid-template-columns: repeat(2, minmax(0, 1fr));
+				    }
+
+				    .project-honors-countries {
+				        columns: 2;
+				    }
+				}
+
+				@media screen and (max-width: 480px) {
+				    .project-honors-awards {
+				        grid-template-columns: minmax(0, 1fr);
+				    }
+
+				    .project-honors-countries {
+				        columns: 1;
+				    }
+				}
+
+				.credit-project-audio {
+				    margin-top: 1.5rem;
+				    padding-top: 1.2rem;
+				    border-top: 1px solid rgba(255, 255, 255, 0.12);
+				}
+
+				.credit-project-audio h4 {
+				    margin: 0 0 0.8rem;
+				    color: #e8d8c9;
+				    font-size: 0.85rem;
+				    letter-spacing: 0.12em;
+				    text-transform: uppercase;
+				}
+
+				#credit-project-player {
+				    display: block;
+				    border: 0;
+				}
+
+				.credit-project-maintenance {
+				    margin: 0;
+				    color: rgba(245, 242, 236, 0.78);
+				    font-size: 0.9rem;
+				    line-height: 1.7;
+				}
+
+				#credit-project-link {
+				    display: inline-block;
+				    margin-top: 0.75rem;
+				    color: rgba(255, 255, 255, 0.72);
+				    font-size: 0.8rem;
+				}
+
+				@media screen and (max-width: 600px) {
+				    .credit-project-panel-content {
+				        grid-template-columns: minmax(0, 1fr);
+				    }
+
+				    .credit-project-image {
+				        width: min(100%, 220px);
+				        max-height: 300px;
+				    }
+				}
+
+
+		.wrapper.style4 {
+			background-color: transparent;
+		}
+
+		.wrapper.style5 {
+			background-color: #ffffff;
+			color: #4E4852;
+		}
+
+			.wrapper.style5 strong, .wrapper.style5 b {
+				color: #2E3842;
+			}
+
+			.wrapper.style5 h2, .wrapper.style5 h3, .wrapper.style5 h4, .wrapper.style5 h5, .wrapper.style5 h6 {
+				color: #2E3842;
+			}
+
+			.wrapper.style5 hr {
+				border-color: #dfdfdf;
+			}
+
+			.wrapper.style5 blockquote {
+				border-color: #dfdfdf;
+			}
+
+			.wrapper.style5 code {
+				background: transparent;
+			}
+
+			.wrapper.style5 header p {
+				color: #8E8892;
+			}
+
+			.wrapper.style5 header.major h2, .wrapper.style5 header.major h3, .wrapper.style5 header.major h4, .wrapper.style5 header.major h5, .wrapper.style5 header.major h6 {
+				border-color: #dfdfdf;
+			}
+
+			.wrapper.style5 header.major p {
+				color: #4E4852;
+			}
+
+			.wrapper.style5 label {
+				color: #2E3842;
+			}
+
+			.wrapper.style5 input[type="text"],
+			.wrapper.style5 input[type="password"],
+			.wrapper.style5 input[type="email"],
+			.wrapper.style5 select,
+			.wrapper.style5 textarea {
+				background-color: transparent;
+			}
+
+			.wrapper.style5 select {
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23dfdfdf' /%3E%3C/svg%3E");
+			}
+
+				.wrapper.style5 select option {
+					color: #2E3842;
+					background: #ffffff;
+				}
+
+			.wrapper.style5 input[type="checkbox"] + label,
+			.wrapper.style5 input[type="radio"] + label {
+				color: #4E4852;
+			}
+
+				.wrapper.style5 input[type="checkbox"] + label:before,
+				.wrapper.style5 input[type="radio"] + label:before {
+					background: transparent;
+				}
+
+			.wrapper.style5 input[type="checkbox"]:checked + label:before,
+			.wrapper.style5 input[type="radio"]:checked + label:before {
+				background:transparent;
+				color: #ffffff;
+			}
+
+			.wrapper.style5 ::-webkit-input-placeholder {
+				color: #8E8892 !important;
+			}
+
+			.wrapper.style5 :-moz-placeholder {
+				color: #8E8892 !important;
+			}
+
+			.wrapper.style5 ::-moz-placeholder {
+				color: #8E8892 !important;
+			}
+
+			.wrapper.style5 :-ms-input-placeholder {
+				color: #8E8892 !important;
+			}
+
+			.wrapper.style5 .formerize-placeholder {
+				color: #8E8892 !important;
+			}
+
+			.wrapper.style5 .icon.major {
+				border-color: #dfdfdf;
+			}
+
+			.wrapper.style5 ul.alt li {
+				border-color: #dfdfdf;
+			}
+
+			.wrapper.style5 table tbody tr {
+				border-color: #dfdfdf;
+			}
+
+				.wrapper.style5 table tbody tr:nth-child(2n + 1) {
+					background-color: transparent;
+				}
+
+			.wrapper.style5 table th {
+				color: #2E3842;
+			}
+
+			.wrapper.style5 table thead {
+				border-color: #dfdfdf;
+			}
+
+			.wrapper.style5 table tfoot {
+				border-color: #dfdfdf;
+			}
+
+			.wrapper.style5 table.alt tbody tr td {
+				border-color: #dfdfdf;
+			}
+
+			.wrapper.style5 input[type="submit"],
+			.wrapper.style5 input[type="reset"],
+			.wrapper.style5 input[type="button"],
+			.wrapper.style5 button,
+			.wrapper.style5 .button {
+				box-shadow: inset 0 0 0 2px #dfdfdf;
+				color: #2E3842;
+			}
+
+				.wrapper.style5 input[type="submit"]:hover,
+				.wrapper.style5 input[type="reset"]:hover,
+				.wrapper.style5 input[type="button"]:hover,
+				.wrapper.style5 button:hover,
+				.wrapper.style5 .button:hover {
+					background-color: transparent;
+				}
+
+				.wrapper.style5 input[type="submit"]:active,
+				.wrapper.style5 input[type="reset"]:active,
+				.wrapper.style5 input[type="button"]:active,
+				.wrapper.style5 button:active,
+				.wrapper.style5 .button:active {
+					background-color: transparent;
+				}
+
+			@media screen and (max-width: 736px) {
+
+				.wrapper.style5 .features li {
+					border-top-color: #dfdfdf;
+				}
+
+			}
+
+		@media screen and (max-width: 980px) {
+
+			.wrapper {
+				padding: 4em 3em 2em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.wrapper {
+				padding: 3em 2em 1em 2em ;
+			}
+
+		}
+
+		
+
+/* Page Wrapper + Menu */
+
+	#page-wrapper {
+		-moz-transition: opacity 0.5s ease;
+		-webkit-transition: opacity 0.5s ease;
+		-ms-transition: opacity 0.5s ease;
+		transition: opacity 0.5s ease;
+		opacity: 1;
+		padding-top: 3em;
+	}
+
+		#page-wrapper:before {
+			background: transparent;
+			content: '';
+			display: block;
+			display: none;
+			height: 100%;
+			left: 0;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 10001;
+		}
+
+	#menu {
+		-moz-transform: translateX(20em);
+		-webkit-transform: translateX(20em);
+		-ms-transform: translateX(20em);
+		transform: translateX(20em);
+		-moz-transition: -moz-transform 0.5s ease;
+		-webkit-transition: -webkit-transform 0.5s ease;
+		-ms-transition: -ms-transform 0.5s ease;
+		transition: transform 0.5s ease;
+		-webkit-overflow-scrolling: touch;
+		background: transparent;
+		color: #ffffff;
+		height: 100%;
+		max-width: 80%;
+		overflow-y: auto;
+		padding: 3em 2em;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 20em;
+		z-index: 10002;
+	}
+
+		#menu ul {
+			list-style: none;
+			padding: 0;
+		}
+
+			#menu ul > li {
+				border-top: solid 1px rgba(0, 0, 0, 0.125);
+				margin: 0.5em 0 0 0;
+				padding: 0.5em 0 0 0;
+			}
+
+				#menu ul > li:first-child {
+					border-top: 0 !important;
+					margin-top: 0 !important;
+					padding-top: 0 !important;
+				}
+
+				#menu ul > li > a {
+					border: 0;
+					color: inherit;
+					display: block;
+					font-size: 0.8em;
+					letter-spacing: 0.225em;
+					outline: 0;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+
+					@media screen and (max-width: 736px) {
+
+						#menu ul > li > a {
+							line-height: 3em;
+						}
+
+					}
+
+		#menu .close {
+    background-image: url("images/close.svg");
+    background-position: 4.85em 1em;
+    background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    height: 3em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 7em;
+}
+
+		@media screen and (max-width: 736px) {
+
+			#menu {
+				padding: 3em 1.5em;
+			}
+
+		}
+
+	body.is-menu-visible #page-wrapper {
+		opacity: 0.35;
+	}
+
+		body.is-menu-visible #page-wrapper:before {
+			display: block;
+		}
+
+	body.is-menu-visible #menu {
+		-moz-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+/* Header */
+
+	#header {
+		-moz-transition: background-color 0.2s ease;
+		-webkit-transition: background-color 0.2s ease;
+		-ms-transition: background-color 0.2s ease;
+		transition: background-color 0.2s ease;
+		background: #2e3842;
+		height: 3em;
+		left: 0;
+		line-height: 3em;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 10000;
+	}
+
+		#header h1 {
+			-moz-transition: opacity 0.2s ease;
+			-webkit-transition: opacity 0.2s ease;
+			-ms-transition: opacity 0.2s ease;
+			transition: opacity 0.2s ease;
+			height: inherit;
+			left: 1.25em;
+			line-height: inherit;
+			position: absolute;
+			top: 0;
+		}
+
+			#header h1 a {
+				border: 0;
+				display: block;
+				height: inherit;
+				line-height: inherit;
+			}
+
+				@media screen and (max-width: 736px) {
+
+					#header h1 a {
+						font-size: 0.8em;
+					}
+
+				}
+
+		#header nav {
+			height: inherit;
+			line-height: inherit;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+			#header nav > ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				white-space: nowrap;
+			}
+
+				#header nav > ul > li {
+					display: inline-block;
+					padding: 0;
+				}
+
+					#header nav > ul > li > a {
+						border: 0;
+						color: #fff;
+						display: block;
+						font-size: 0.8em;
+						letter-spacing: 0.225em;
+						padding: 0 1.5em;
+						text-transform: uppercase;
+					}
+
+						#header nav > ul > li > a.menuToggle {
+							outline: 0;
+							position: relative;
+						}
+
+							#header nav > ul > li > a.menuToggle:after {
+								background-image: url("images/bars.svg");
+								background-position: right center;
+								background-repeat: no-repeat;
+								content: '';
+								display: inline-block;
+								height: 3.75em;
+								vertical-align: top;
+								width: 2em;
+							}
+
+							@media screen and (max-width: 736px) {
+
+								#header nav > ul > li > a.menuToggle {
+									padding: 0 1.5em;
+								}
+
+									#header nav > ul > li > a.menuToggle span {
+										display: none;
+									}
+
+							}
+
+						@media screen and (max-width: 736px) {
+
+							#header nav > ul > li > a {
+								padding: 0 0 0 1.5em;
+							}
+
+						}
+
+					#header nav > ul > li:first-child {
+						margin-left: 0;
+					}
+
+		#header.alt {
+			background: transparent;
+		}
+
+			#header.alt h1 {
+				pointer-events: none;
+				opacity: 0;
+			}
+
+/* Banner */
+
+	#banner {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		cursor: default;
+		height: 100vh;
+		min-height: 35em;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+	}
+
+		#banner h2 {
+			-moz-transform: scale(1);
+			-webkit-transform: scale(1);
+			-ms-transform: scale(1);
+			transform: scale(1);
+			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+			transition: transform 0.5s ease, opacity 0.5s ease;
+			display: inline-block;
+			font-size: 1.75em;
+			opacity: 1;
+			padding: 0.35em 1em;
+			position: relative;
+			z-index: 1;
+		}
+
+			#banner h2:before, #banner h2:after {
+				-moz-transition: width 0.85s ease;
+				-webkit-transition: width 0.85s ease;
+				-ms-transition: width 0.85s ease;
+				transition: width 0.85s ease;
+				-moz-transition-delay: 0.25s;
+				-webkit-transition-delay: 0.25s;
+				-ms-transition-delay: 0.25s;
+				transition-delay: 0.25s;
+				background: #fff;
+				content: '';
+				display: block;
+				height: 2px;
+				position: absolute;
+				width: 100%;
+			}
+
+			#banner h2:before {
+				top: 0;
+				left: 0;
+			}
+
+			#banner h2:after {
+				bottom: 0;
+				right: 0;
+			}
+
+		#banner p {
+			letter-spacing: 0.225em;
+			text-transform: uppercase;
+		}
+
+			#banner p a {
+				color: inherit;
+			}
+
+		#banner .more {
+			-moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
+			-webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
+			-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
+			transition: transform 0.75s ease, opacity 0.75s ease;
+			-moz-transition-delay: 3.5s;
+			-webkit-transition-delay: 3.5s;
+			-ms-transition-delay: 3.5s;
+			transition-delay: 3.5s;
+			-moz-transform: translateY(0);
+			-webkit-transform: translateY(0);
+			-ms-transform: translateY(0);
+			transform: translateY(0);
+			border: none;
+			bottom: 0;
+			color: inherit;
+			font-size: 0.8em;
+			height: 8.5em;
+			left: 50%;
+			letter-spacing: 0.225em;
+			margin-left: -8.5em;
+			opacity: 1;
+			outline: 0;
+			padding-left: 0.225em;
+			position: absolute;
+			text-align: center;
+			text-transform: uppercase;
+			width: 16em;
+			z-index: 1;
+		}
+
+			#banner .more:after {
+				background-image: url("images/arrow.svg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				bottom: 4em;
+				content: '';
+				display: block;
+				height: 1.5em;
+				left: 50%;
+				margin: 0 0 0 -0.75em;
+				position: absolute;
+				width: 1.5em;
+			}
+
+		#banner:after {
+			pointer-events: none;
+			-moz-transition: opacity 3s ease-in-out;
+			-webkit-transition: opacity 3s ease-in-out;
+			-ms-transition: opacity 3s ease-in-out;
+			transition: opacity 3s ease-in-out;
+			-moz-transition-delay: 1.25s;
+			-webkit-transition-delay: 1.25s;
+			-ms-transition-delay: 1.25s;
+			transition-delay: 1.25s;
+			content: '';
+			background: #2e3842;
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			opacity: 0;
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#banner {
+				padding: 7em 3em 5em 3em ;
+				height: auto;
+				min-height: 0;
+			}
+
+				#banner h2 {
+					font-size: 1.25em;
+				}
+
+				#banner br {
+					display: none;
+				}
+
+				#banner .more {
+					display: none;
+				}
+
+		}
+
+	body.is-preload #banner h2 {
+		-moz-transform: scale(0.95);
+		-webkit-transform: scale(0.95);
+		-ms-transform: scale(0.95);
+		transform: scale(0.95);
+		opacity: 0;
+	}
+
+		body.is-preload #banner h2:before, body.is-preload #banner h2:after {
+			width: 0;
+		}
+
+	body.is-preload #banner .more {
+		-moz-transform: translateY(8.5em);
+		-webkit-transform: translateY(8.5em);
+		-ms-transform: translateY(8.5em);
+		transform: translateY(8.5em);
+		opacity: 0;
+	}
+
+	body.is-preload #banner:after {
+		opacity: 1;
+	}
+
+/* CTA */
+
+	#cta .inner {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		max-width: 45em;
+	}
+
+		#cta .inner header {
+			-moz-order: 1;
+			-webkit-order: 1;
+			-ms-order: 1;
+			order: 1;
+			padding-right: 3em;
+			width: 70%;
+		}
+
+			#cta .inner header p {
+				color: inherit;
+			}
+
+		#cta .inner .actions {
+			-moz-order: 2;
+			-webkit-order: 2;
+			-ms-order: 2;
+			order: 2;
+			width: 30%;
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#cta .inner {
+				display: block;
+				text-align: center;
+			}
+
+				#cta .inner header {
+					padding-right: 0;
+					width: 100%;
+				}
+
+				#cta .inner .actions {
+					margin-left: auto;
+					margin-right: auto;
+					max-width: 20em;
+					width: 100%;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#cta .inner .actions {
+				max-width: none;
+			}
+
+		}
+
+/* Main */
+
+	#main > header {
+		padding: 12em 0 10em 0 ;
+		background-image: -moz-linear-gradient(top, transparent), url("../../images/banner.jpg");
+		background-image: -webkit-linear-gradient(top, transparent), url("../../images/banner.jpg");
+		background-image: -ms-linear-gradient(top, transparent), url("../../images/banner.jpg");
+		background-image: linear-gradient(top,transparent), url("../../images/banner.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+		#main > header h2 {
+			font-size: 1.75em;
+			margin: 0 0 0.5em 0;
+		}
+
+		#main > header p {
+			color: inherit;
+			letter-spacing: 0.225em;
+			text-transform: uppercase;
+			top: 0;
+		}
+
+			#main > header p a {
+				color: inherit;
+			}
+
+		@media screen and (max-width: 1680px) {
+
+			#main > header {
+				padding: 10em 0 8em 0 ;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#main > header {
+				padding: 8em 3em 6em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#main > header {
+				padding: 10em 3em 8em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#main > header {
+				padding: 5em 3em 3em 3em ;
+			}
+
+				#main > header h2 {
+					font-size: 1.25em;
+					margin: 0 0 1em 0;
+				}
+
+		}
+
+	body.is-mobile #main > header {
+		background-attachment: scroll;
+	}
+
+/* Footer */
+
+	#footer {
+		padding: 6em 0 4em 0 ;
+		background-color: #1d242a;
+		text-align: center;
+	}
+
+		#footer .icons {
+			font-size: 1.25em;
+		}
+
+			#footer .icons a {
+				color: rgba(255, 255, 255, 0.5);
+			}
+
+				#footer .icons a:hover {
+					color: #fff;
+				}
+
+		#footer .copyright {
+			color: rgba(255, 255, 255, 0.5);
+			font-size: 0.65em;
+			letter-spacing: 0.225em;
+			list-style: none;
+			padding: 0;
+			text-transform: uppercase;
+		}
+
+			#footer .copyright li {
+				border-left: solid 1px rgba(255, 255, 255, 0.5);
+				display: inline-block;
+				line-height: 1em;
+				margin-left: 1em;
+				padding-left: 1em;
+			}
+
+				#footer .copyright li:first-child {
+					border-left: 0;
+					margin-left: 0;
+					padding-left: 0;
+				}
+
+				#footer .copyright li a {
+					color: inherit;
+				}
+
+					#footer .copyright li a:hover {
+						color: #fff;
+					}
+
+				@media screen and (max-width: 480px) {
+
+					#footer .copyright li {
+						border: 0;
+						display: block;
+						line-height: 1.65em;
+						margin: 0;
+						padding: 0.5em 0;
+					}
+
+				}
+
+		@media screen and (max-width: 980px) {
+
+			#footer {
+				padding: 4em 3em 2em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#footer {
+				padding: 3em 2em 1em 2em ;
+			}
+
+		}
+
+/* Landing */
+
+	body.landing #page-wrapper {
+		background-image: -moz-linear-gradient(top, transparent), url("../../images/banner.jpg");
+		background-image: -webkit-linear-gradient(top, transparent), url("../../images/banner.jpg");
+		background-image: -ms-linear-gradient(top, transparent), url("../../images/banner.jpg");
+		background-image: linear-gradient(top,transparent), url("../../images/banner.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 0;
+	}
+
+	body.landing #footer {
+		background-color: rgba(29, 36, 42, 0.9);
+	}
+
+	body.is-mobile.landing #page-wrapper {
+		background: none;
+	}
+
+	body.is-mobile.landing #banner,
+	body.is-mobile.landing .wrapper.style4 {
+		background-image: -moz-linear-gradient(top, transparent), url("../../images/banner.jpg");
+		background-image: -webkit-linear-gradient(top, transparent), url("../../images/banner.jpg");
+		background-image: -ms-linear-gradient(top, transparent), url("../../images/banner.jpg");
+		background-image: linear-gradient(top, transparent), url("../../images/banner.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	body.is-mobile.landing #footer {
+		background-color: #1d242a;
+	}
+
+
+	#banner .actions.special .button.primary {
+    background: rgba(255, 255, 255, 0.05) !important;
+    /* Suppression du flou */
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    
+    border-radius: 50px !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: white !important;
+    transition: transform 0.3s ease, background-color 0.3s ease !important;
+}
+
+#banner .actions.special .button.primary:hover {
+    transform: scale(1.05) !important;
+    background: rgba(255, 255, 255, 0.1) !important; 
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+/* --- Effet au survol (Grossissement) --- */
+#banner .actions.special .button.primary:hover {
+    transform: scale(1.05) !important; /* Agrandit le bouton de 5% */
+    
+    /* Au survol, on peut éclaircir très légèrement le fond pour l'effet */
+    background: rgba(255, 255, 255, 0.1) !important; 
+    border: 1px solid rgba(255, 255, 255, 0.5) !important; /* Bordure plus nette au survol */
+}
+/* 1. On force la section banner à prendre tout l'écran et à centrer son contenu */
+#banner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+    padding: 0 !important;
+}
+
+/* 2. On s'assure que l'image de fond du template s'adapte bien à ce plein écran */
+#banner::before {
+    height: 100vh !important;
+}
+
+/* 3. On centre le conteneur interne sans toucher aux tailles de texte d'origine */
+#banner .inner {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+}
+
+/* 4. On réaligne proprement la liste des boutons pour qu'ils restent bien au centre */
+#banner ul.actions.special {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 20px !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+}
+/* 1. S'assurer que le conteneur principal de la page d'accueil applique l'image dès le sommet (top: 0) */
+body.landing #page-wrapper {
+    background-image: -moz-linear-gradient(top, transparent), url("../../images/banner.jpg");
+    background-image: -webkit-linear-gradient(top,transparent), url("../../images/banner.jpg");
+    background-image: -ms-linear-gradient(top, transparent), url("../../images/banner.jpg");
+    background-image: linear-gradient(top, transparent), url("../../images/banner.jpg");
+    
+    /* Fixe l'image pour qu'elle "slide" / reste en arrière-plan pendant le scroll */
+    background-attachment: fixed !important;
+    
+    /* Positionne l'image précisément tout en haut et au centre */
+    background-position: top center !important;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Supprime tout espacement supérieur qui repousserait l'image vers le bas */
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+/* Assure une marge latérale minimale sur toutes les sections et conteneurs */
+.wrapper {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+/* S'assure que les conteneurs internes s'adaptent et ne dépassent jamais */
+.container {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+}
+
+/* Pour les petits écrans (mobiles), on réduit un tout petit peu la marge pour garder de la place */
+@media screen and (max-width: 736px) {
+    .wrapper {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
+}
+/* Transforme les sections en encarts arrondis et centrés */
+.wrapper {
+    background-color: rgba(30, 30, 30, 0.5) !important; /* Fond gris sombre translucide */
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    
+    /* Gestion de la taille et de la forme */
+    max-width: 900px !important; /* Largeur maximale de l'encart (réduisez à 800px si vous le voulez plus étoyen) */
+    width: 90% !important; /* S'adapte bien sur mobile */
+    margin: 40px auto !important; /* Centre l'encart et ajoute de l'espace en haut et en bas */
+    border-radius: 16px !important; /* Arrondit joliment les coins */
+    
+    /* Gère les bordures intérieures pour que le contenu ne colle pas aux bords arrondis */
+    padding: 40px 20px !important; 
+    box-sizing: border-box !important;
+}
+/* Effet de zoom sur les affiches principales */
+.poster-link img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.poster-link:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Style du menu dépliant */
+.autres-credits {
+    margin-top: 40px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 15px 20px;
+    text-align: left;
+}
+
+.autres-credits summary {
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    font-size: 1.1em;
+}
+
+.credits-content {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Alignement des lignes avec miniatures dans le menu */
+.credits-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.credits-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.credit-thumb {
+    width: 50px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.credit-info {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95em;
+}
+
+/* Élargit encore un peu plus l'encart gris */
+.wrapper {
+    max-width: 1300px !important; /* On passe à 1300px pour un format bien large */
+    width: 95% !important;
+    padding: 50px 40px !important;
+}
+/* S'assure que les titres sous les cartes s'intègrent bien si vous les mettez en dehors */
+.poster-card {
+    margin-bottom: 10px;
+}
+/* Style des lignes de playlists pour qu'elles épousent le format des crédits */
+.playlist-genre-list li {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.playlist-genre-list li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+}
+
+.playlist-genre-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 12px 15px;
+    text-decoration: none !important;
+}
+
+.playlist-genre-link strong {
+    color: #fff;
+    font-size: 0.95em;
+}
+
+.playlist-genre-link span {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85em;
+}
+/* Espacement entre les boutons de genres */
+.playlist-selector {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espace horizontal entre les boutons */
+    flex-wrap: wrap;
+    margin-bottom: 35px; /* Grand espace net entre les boutons et le lecteur en dessous */
+}
+
+.playlist-tab {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.playlist-tab:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.playlist-tab.active {
+    background: #ffffff !important;
+    color: #1a1a1a !important;
+    border-color: #ffffff !important;
+}
+
+/* Conteneur du lecteur compact */
+.soundcloud-player-container {
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(255, 248, 248, 0.3);
+    box-shadow: 0 4px 15px rgba(151, 144, 144, 0.3);
+    margin-top: 10px;
+}
+/* Conteneur principal de l'affiche */
+
+
+/* L'image de l'affiche */
+
+
+/* L'effet d'assombrissement et le texte (caché par défaut) */
+.poster-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75); /* Fond noir opaque au survol */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Invisible de base */
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.poster-overlay h3 {
+    color: #fff !important;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.poster-overlay p {
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 4px;
+}
+/* Conteneur principal de l'affiche */
+
+
+/* L'image de l'affiche */
+
+/* L'effet d'assombrissement (caché par défaut) */
+.poster-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75); /* Fond noir opaque au survol */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Invisible de base */
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Le texte "Écouter la BO" sans aucun soulignement */
+.poster-overlay p {
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    border-bottom: none !important; /* Force l'absence de soulignement */
+    text-decoration: none !important;
+}
+
+/* Actions au survol de la souris */
+.poster-card-wrapper:hover img {
+    transform: scale(1.04); /* Léger zoom de l'image */
+}
+
+.poster-card-wrapper:hover .poster-overlay {
+    opacity: 1; /* Fait apparaître le voile noir et le texte */
+}
+
+/* Style du bouton pour fermer le lecteur */
+.bouton-fermer-bo {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    padding: 5px 12px !important;
+    border-radius: 4px !important;
+    font-size: 0.8em !important;
+    font-weight: normal !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+}
+
+.bouton-fermer-bo:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.bouton-fermer-bo .croix {
+    font-size: 1em;
+    line-height: 1;
+}
+
+.bouton-fermer-bo .texte {
+    line-height: 1;
+}
+/* Conteneur de l'affiche */
+
+
+/* L'image de l'affiche */
+
+
+/* Effet d'assombrissement au survol */
+.poster-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.poster-overlay p {
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    border-bottom: none !important;
+    text-decoration: none !important;
+}
+
+.poster-card-wrapper:hover img {
+    transform: scale(1.04);
+}
+
+.poster-card-wrapper:hover .poster-overlay {
+    opacity: 1;
+}
+
+/* Style du bouton "Fermer" du panneau */
+.bouton-fermer-bo {
+    background: transparent !important;
+    color: #ff6b6b !important;
+    border: 1px solid #ff6b6b !important;
+    padding: 6px 14px !important;
+    border-radius: 4px !important;
+    font-size: 0.85em !important;
+    font-weight: bold !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bouton-fermer-bo:hover {
+    background: rgba(255, 107, 107, 0.1) !important;
+    color: #ff4757 !important;
+}
+/* Le texte "Écouter la BO" sans majuscules forcées et sans soulignement */
+.poster-overlay p {
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: none !important; /* Désactive les majuscules automatiques */
+    font-size: 1.1em;
+    border-bottom: none !important;
+    text-decoration: none !important;
+}
+/* Empêche les titres de films sous les affiches d'être en majuscules automatiques */
+.col-4 h3 {
+    text-transform: none !important;
+}
+/* Conteneur principal de l'affiche : coins subtils ou droits pour un effet cinéma */
+
+
+/* L'effet d'assombrissement au survol */
+.poster-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.8); /* Noir un peu plus profond */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.poster-overlay p {
+    margin: 0;
+    font-weight: 500; /* Moins lourd, plus élégant */
+    letter-spacing: 2px; /* Espacement des lettres style cinématique */
+    text-transform: uppercase !important; /* Le "Écouter la BO" en majuscules espacées fait plus pro ici */
+    font-size: 0.95em;
+    border-bottom: none !important;
+    text-decoration: none !important;
+}
+
+.poster-card-wrapper:hover img {
+    transform: scale(1.03); /* Zoom plus discret et chic */
+}
+
+.poster-card-wrapper:hover .poster-overlay {
+    opacity: 1;
+}
+
+/* Titres des films sous les affiches : style épuré */
+.col-4 h3 {
+    text-transform: none !important;
+    font-size: 1em !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.5px;
+    color: #e0e0e0;
+    margin-top: 15px !important;
+}
+/* --- STYLE PRO POUR LES ACCORDÉONS (DETAILS / SUMMARY) --- */
+
+details.autres-credits {
+    background: rgba(20, 20, 20, 0.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 4px !important;
+    margin-top: 25px !important;
+    padding: 0 !important;
+    transition: all 0.3s ease !important;
+    overflow: hidden;
+}
+
+details.autres-credits[open] {
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    background: rgba(20, 20, 20, 0.95) !important;
+}
+
+/* La barre cliquable (le titre du menu) */
+details.autres-credits summary {
+    padding: 20px 25px !important;
+    font-size: 1.05em !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.5px !important;
+    color: #ffffff !important;
+    cursor: pointer;
+    list-style: none; /* Enlève la puce moche par défaut sur certains navigateurs */
+    position: relative;
+    outline: none !important;
+}
+
+/* Petite flèche propre et personnalisée à droite du summary */
+details.autres-credits summary::after {
+    content: '+';
+    position: absolute;
+    right: 25px;
+    font-size: 1.2em;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+}
+
+details.autres-credits[open] summary::after {
+    transform: rotate(45deg); /* Transforme le + en croix/fermeture élégante */
+}
+
+details.autres-credits summary:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+/* Le contenu à l'intérieur de l'accordéon une fois ouvert */
+.credits-content {
+    padding: 10px 25px 25px 25px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Style des petits onglets de playlist à l'intérieur */
+.playlist-tab {
+    background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ccc !important;
+    padding: 8px 16px !important;
+    border-radius: 3px !important;
+    font-size: 0.9em !important;
+    margin: 5px !important;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.playlist-tab:hover, .playlist-tab.active {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: #fff !important;
+    color: #fff !important;
+	
+}
+/* 1. Supprime tout trait de séparation ou bordure interne sous le résumé des accordéons */
+details.autres-credits summary {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.credits-content {
+    border-top: none !important;
+    box-shadow: none !important;
+}
+
+/* 2. Rend les boutons de playlist ultra-épurés (sans gros cadres lourds, sans majuscules forcées) */
+.playlist-tab {
+    background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 2px !important;
+    color: #999999 !important;
+    padding: 8px 16px !important;
+    font-size: 0.85em !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.5px !important;
+    text-transform: none !important;
+    margin: 4px !important;
+    cursor: pointer;
+    transition: all 0.3s ease !important;
+}
+
+/* Au survol ou quand le bouton est actif */
+.playlist-tab:hover {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+}
+
+.playlist-tab.active {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+}
+.btn-email {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    padding: 12px 30px !important;
+    border-radius: 30px !important;
+    font-size: 0.85em !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-email:hover {
+    background: rgba(255, 255, 255, 0.18) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+/* Rend le titre de la largeur exacte de son texte et gère l'espacement */
+.title-contact {
+    display: inline-block !important;
+    margin-bottom: 0 !important;
+    font-size: 1.75em !important;
+    letter-spacing: 0.2em !important;
+    position: relative !important;
+}
+
+/* Crée la ligne automatiquement de la même longueur que le texte */
+.title-contact::after {
+    content: "" !important;
+    display: block !important;
+    width: 100% !important;
+    height: 2px !important;
+    background: #ffffff !important;
+    margin-top: 15px !important;
+}
+#three .features li::before {
+    color: #ff7a00 !important; /* Changez ce code couleur selon la nuance d'orange souhaitée */
+}
+/* Force la section 2 à libérer l'espace et coller à droite */
+#two .spotlight {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    min-height: 150px !important;
+}
+
+#two .spotlight .content {
+    position: absolute !important;
+    right: 40px !important; /* Distance par rapport au bord droit de l'encart */
+    top: 50% !important;
+    transform: translateY(-50%) !important; /* Centre verticalement proprement */
+    width: auto !important;
+    max-width: 60% !important;
+    text-align: right !important;
+    padding: 0 !important;
+}
+
+#two .spotlight .content h2,
+#two .spotlight .content p {
+    text-align: right !important;
+}
+#footer {
+    background-color: rgba(0, 0, 0, 0.45) !important;
+    border-top: none !important; /* Supprime la ligne de séparation */
+}
+/* Transforme les conteneurs d'affiches en format rectangle vertical (type affiche de film) */
+
+
+/* Force l'image à bien remplir le rectangle sans se déformer */
+
+
+/* Effet de zoom fluide au survol */
+.poster-card-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+
+/* Réduire la hauteur de la première section */
+#banner {
+    min-height: auto !important;
+    padding: 5em 0 3em 0 !important;
+}
+
+/* Réduire l'espace autour du contenu */
+#banner .inner {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+
+/* Réduire les marges autour du titre */
+#banner h2 {
+    margin-bottom: 0.5em !important;
+}
+
+/* Réduire l'espace sous le texte de présentation */
+#banner p {
+    margin-bottom: 1.5em !important;
+}
+#filmographie .poster-caption {
+    margin-top: 1rem;
+    color: #f4f0e8;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: 1.6;
+}
+
+#filmographie .poster-caption span {
+    margin: 0 0.5rem;
+    color: #888;
+}
+
+/* ===== Ajustement ciblé : titre Filmographie + affiches plus rapprochées ===== */
+#one header.major {
+    margin-bottom: 2rem !important;
+    text-align: left !important;
+}
+
+#one header.major h2 {
+    margin-bottom: 0.8rem !important;
+    color: #f4f0e8 !important;
+    font-family: 'Manrope', 'Helvetica Neue', sans-serif !important;
+    font-size: clamp(1.8rem, 3.2vw, 2.55rem) !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.16em !important;
+    line-height: 1.1 !important;
+    text-transform: uppercase !important;
+}
+
+#one header.major h2::after {
+    content: '';
+    display: block;
+    width: 4.5rem;
+    height: 2px;
+    margin-top: 1rem;
+    background: #c7b99b;
+}
+
+#one header.major p {
+    margin-top: 0.9rem !important;
+    margin-left: 0 !important;
+    color: #b9b6b0 !important;
+    font-size: 0.95rem !important;
+    letter-spacing: 0.035em !important;
+}
+
+/* Resserre les gouttières entre les affiches sans changer la grille */
+#one .row > [class*="col-"] {
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+}
+
+#one .row {
+    margin-left: -0.8rem !important;
+    margin-right: -0.8rem !important;
+}
+
+@media screen and (max-width: 736px) {
+    #one .row > [class*="col-"] {
+        padding-left: 0.55rem !important;
+        padding-right: 0.55rem !important;
+    }
+    #one .row {
+        margin-left: -0.55rem !important;
+        margin-right: -0.55rem !important;
+    }
+}
+
+
+/* ===== Ajustements ciblés de la filmographie ===== */
+#one > .inner > header.major {
+    text-align: left !important;
+    margin-bottom: 1.25rem !important;
+}
+
+#one > .inner > header.major h2 {
+    display: inline-block !important;
+    margin: 0 0 0.65rem !important;
+    color: #f4f0e8 !important;
+    font-size: clamp(1.8rem, 3vw, 2.45rem) !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.14em !important;
+    line-height: 1.12 !important;
+    text-transform: uppercase !important;
+}
+
+#one > .inner > header.major h2::after {
+    content: "" !important;
+    display: block !important;
+    width: 3.8rem !important;
+    height: 2px !important;
+    margin-top: 0.75rem !important;
+    background: #c7b99b !important;
+}
+
+#one > .inner > header.major p {
+    margin: 0.65rem 0 0 !important;
+    color: #b9b6b0 !important;
+    font-size: 0.92rem !important;
+    letter-spacing: 0.025em !important;
+}
+
+/* La grille réelle utilise .row et les colonnes .col-4 : on réduit leurs gouttières. */
+#one > .inner > .row {
+    margin-left: -0.45rem !important;
+    margin-right: -0.45rem !important;
+}
+
+#one > .inner > .row > [class*="col-"] {
+    padding-left: 0.45rem !important;
+    padding-right: 0.45rem !important;
+    padding-top: 0.9rem !important;
+}
+
+#one 
+
+#one .poster-card-wrapper + h3 {
+    margin-top: 0.55rem !important;
+    font-size: 0.88rem !important;
+    line-height: 1.45 !important;
+    letter-spacing: 0.08em !important;
+}
+
+@media screen and (max-width: 736px) {
+    #one > .inner > .row {
+        margin-left: -0.3rem !important;
+        margin-right: -0.3rem !important;
+    }
+
+    #one > .inner > .row > [class*="col-"] {
+        padding-left: 0.3rem !important;
+        padding-right: 0.3rem !important;
+        padding-top: 0.65rem !important;
+    }
+}
+
+
+/* ===== Direction typographique cinématographique ===== */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Montserrat:wght@300;400;500&display=swap');
+
+#one > .inner > header.major {
+    text-align: left !important;
+    margin-bottom: 1.65rem !important;
+}
+#one > .inner > header.major::before {
+    content: "MES PROJETS";
+    display: block;
+    margin-bottom: .75rem;
+    color: #d8d1c8;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .72rem;
+    font-weight: 400;
+    letter-spacing: .48em;
+    line-height: 1.6;
+}
+#one > .inner > header.major h2 {
+    font-family: 'Oswald', 'Arial Narrow', sans-serif !important;
+    font-size: clamp(2.25rem, 4.3vw, 3.45rem) !important;
+    font-weight: 400 !important;
+    letter-spacing: .19em !important;
+    line-height: 1.12 !important;
+    color: #e8d8c9 !important;
+    text-transform: uppercase !important;
+    margin: 0 0 .7rem !important;
+}
+
+#one > .inner > header.major p {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: .72rem !important;
+    font-weight: 400 !important;
+    letter-spacing: .27em !important;
+    line-height: 1.9 !important;
+    text-transform: uppercase !important;
+    color: #d0cbc5 !important;
+    margin-top: .95rem !important;
+}
+#one .poster-card-wrapper + h3 {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #e1d6ca !important;
+    font-size: .76rem !important;
+    font-weight: 400 !important;
+    letter-spacing: .16em !important;
+    text-transform: uppercase !important;
+}
+@media screen and (max-width: 736px) {
+    #one > .inner > header.major h2 { letter-spacing: .12em !important; }
+    #one > .inner > header.major p { letter-spacing: .12em !important; }
+}
+
+
+/* Légendes des affiches : type, trait, puis titre */
+#one .film-caption {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 0 !important;
+  margin: .85rem 0 1.25rem !important;
+  padding: 0 !important;
+  text-align: left !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 400 !important;
+  border: 0 !important;
+}
+#one .film-caption .film-type {
+  display: block;
+  margin: 0 0 .7rem;
+  color: #bdb5ab;
+  font-size: .62rem;
+  line-height: 1.5;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+#one .film-caption .film-caption-rule {
+  display: block;
+  width: 1.8rem;
+  height: 1px;
+  margin: 0 0 .8rem;
+  background: #cdbba5;
+}
+#one .film-caption .film-title {
+  display: block;
+  color: #e8d8c9;
+  font-size: .76rem;
+  line-height: 1.7;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 736px) {
+  #one .film-caption .film-type { font-size: .56rem; letter-spacing: .12em; }
+  #one .film-caption .film-title { font-size: .68rem; letter-spacing: .09em; }
+}
+
+
+/* --- Section éditoriale « D’autres histoires à découvrir » --- */
+details.autres-projets {
+    margin-top: 34px !important;
+    padding: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    border-radius: 3px !important;
+    background: linear-gradient(115deg, rgba(255,255,255,0.035), rgba(0,0,0,0.18)) !important;
+    overflow: hidden;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+details.autres-projets:hover,
+details.autres-projets[open] {
+    border-color: rgba(255, 255, 255, 0.36) !important;
+}
+
+details.autres-projets > summary {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 26px 28px !important;
+    list-style: none !important;
+    cursor: pointer;
+}
+
+details.autres-projets > summary::-webkit-details-marker { display: none; }
+details.autres-projets > summary::marker { content: ""; }
+details.autres-projets > summary::after { content: none !important; }
+
+.autres-projets-copy {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.autres-projets-kicker {
+    display: block;
+    margin-bottom: 13px;
+    color: rgba(255,255,255,0.56);
+    font-size: 0.62rem;
+    font-weight: 400;
+    letter-spacing: 0.19em;
+    line-height: 1.5;
+}
+
+.autres-projets-titre {
+    display: block;
+    color: #f3f0e8;
+    font-size: clamp(1.15rem, 2.1vw, 1.65rem);
+    font-weight: 400;
+    letter-spacing: 0.005em;
+    line-height: 1.35;
+    text-transform: none;
+}
+
+.autres-projets-description {
+    display: block;
+    margin-top: 5px;
+    color: rgba(255,255,255,0.62);
+    font-size: 0.82rem;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+    line-height: 1.6;
+    text-transform: none;
+}
+
+.autres-projets-action {
+    display: block;
+    margin-top: 24px;
+    padding-top: 13px;
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.88);
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    line-height: 1.5;
+}
+
+.autres-projets-fleche {
+    display: inline-flex;
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,0.38);
+    border-radius: 50%;
+    color: #f3f0e8;
+    font-size: 1.45rem;
+    font-weight: 300;
+    line-height: 1;
+    transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+.autres-projets-indice {
+    flex: 0 1 auto;
+    max-width: 120px;
+    color: rgba(255,255,255,0.58);
+    font-size: 0.68rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.45;
+    text-align: right;
+}
+
+details.autres-projets > summary:hover .autres-projets-fleche {
+    transform: translateY(3px);
+    background: rgba(255,255,255,0.07);
+    border-color: rgba(255,255,255,0.7);
+}
+
+details.autres-projets[open] > summary .autres-projets-fleche {
+    transform: rotate(180deg);
+}
+
+details.autres-projets[open] > summary:hover .autres-projets-fleche {
+    transform: rotate(180deg) translateY(3px);
+}
+
+.autres-projets-toggle { display: none; }
+
+details.autres-projets .credits-content {
+    margin-top: 0 !important;
+    padding: 0 28px 26px !important;
+}
+
+@media screen and (max-width: 736px) {
+    details.autres-projets { margin-top: 26px !important; }
+    details.autres-projets > summary { padding: 22px 18px !important; gap: 14px; }
+    .autres-projets-kicker { font-size: 0.56rem; margin-bottom: 10px; }
+    .autres-projets-titre { font-size: 1.15rem; }
+    .autres-projets-description { font-size: 0.76rem; }
+    .autres-projets-action { margin-top: 18px; font-size: 0.61rem; }
+    .autres-projets-fleche { flex-basis: 40px; width: 40px; height: 40px; font-size: 1.2rem; }
+    .autres-projets-indice { max-width: 90px; font-size: 0.58rem; }
+    details.autres-projets .credits-content { padding: 0 18px 20px !important; }
+}
+
+
+/* Présentation éditoriale des crédits des autres projets */
+.autres-projets .credits-intro {
+  margin: 0 0 1.25rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.78rem;
+  letter-spacing: 0.09em;
+}
+.autres-projets .credits-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.autres-projets .credit-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.45rem;
+  line-height: 1.5;
+}
+.autres-projets .credit-info strong {
+  color: #fff;
+  font-weight: 600;
+}
+.autres-projets .credit-year,
+.autres-projets .credit-separator,
+.autres-projets .credit-role {
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 400;
+}
+.autres-projets .credit-role {
+  letter-spacing: 0.035em;
+}
+@media screen and (max-width: 480px) {
+  .autres-projets .credits-list li { gap: 0.75rem; }
+  .autres-projets .credit-info { font-size: 0.9rem; }
+}
+
+
+/* Accordéon des playlists : même langage visuel que « Explorer tous les projets » */
+details.autres-playlists {
+    margin-top: 18px !important;
+}
+
+details.autres-playlists .credits-content {
+    padding-top: 0 !important;
+}
+
+details.autres-playlists .playlist-selector {
+    margin-top: 8px;
+}
+
+details.autres-playlists .credits-content > p {
+    font-family: inherit;
+    font-size: 0.82rem !important;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+    line-height: 1.6;
+}
+
+
+/* Harmonisation typographique : une seule police dans les deux accordéons */
+details.autres-projets,
+details.autres-projets *,
+details.autres-playlists,
+details.autres-playlists * {
+    font-family: "Open Sans", Helvetica, sans-serif !important;
+}
+
+/* Conserver les pictogrammes de police du site si présents */
+details.autres-projets .autres-projets-fleche,
+details.autres-playlists .autres-projets-fleche {
+    font-family: "Open Sans", Helvetica, sans-serif !important;
+}
+
+
+/* =========================================================
+   ACCORDÉON FILMOGRAPHIE — finition éditoriale cinématographique
+   ========================================================= */
+details.autres-projets:not(.autres-playlists) {
+    margin-top: 42px !important;
+    border: 1px solid rgba(226, 218, 204, 0.34) !important;
+    border-radius: 2px !important;
+    background:
+        radial-gradient(ellipse at 15% 0%, rgba(255,255,255,0.035), transparent 55%),
+        rgba(8, 9, 9, 0.76) !important;
+    overflow: hidden;
+}
+
+details.autres-projets:not(.autres-playlists) > summary {
+    display: flex !important;
+    align-items: center !important;
+    gap: 24px !important;
+    padding: 26px 28px 22px !important;
+
+}
+
+details.autres-projets:not(.autres-playlists) .credits-list-wrap {
+    margin: 0 !important;
+    padding: 0 28px 18px !important;
+    border-top: 0 !important;
+    background: transparent !important;
+}
+
+details.autres-projets:not(.autres-playlists) .credits-list {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+@media screen and (max-width: 736px) {
+    details.autres-projets:not(.autres-playlists) {
+        margin-top: 30px !important;
+    }
+
+    details.autres-projets:not(.autres-playlists) > summary {
+        gap: 12px !important;
+        padding: 20px 16px 18px !important;
+    }
+
+    details.autres-projets:not(.autres-playlists) > summary .autres-projets-description {
+        font-size: 0.72rem !important;
+        letter-spacing: 0.11em !important;
+    }
+
+    details.autres-projets:not(.autres-playlists) > summary .autres-projets-fleche {
+        flex-basis: 38px !important;
+        width: 38px !important;
+        height: 38px !important;
+        font-size: 1rem !important;
+    }
+
+    details.autres-projets:not(.autres-playlists) .credits-list-wrap {
+        padding: 0 16px 12px !important;
+    }
+}
+/* CORRECTION LARGEUR DES SECTIONS — ajouté le 12/10/2026 */
+/* Les sections #one, #two et #Four utilisent .wrapper > .inner. */
+.wrapper > .inner {
+    width: 92% !important;
+    max-width: 1600px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box;
+}
+
+/* Conserver des marges adaptées sur les petits écrans. */
+@media screen and (max-width: 736px) {
+	#one.wrapper,
+	#two.wrapper,
+	#Four.wrapper {
+		width: calc(100% - 32px) !important;
+        max-width: none !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		box-sizing: border-box !important;
+	}
+
+	#one.wrapper > .inner,
+	#two.wrapper > .inner,
+	#Four.wrapper > .inner {
+		width: 100% !important;
+		max-width: none !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+    }
+}
+
+
+
+
+/* CORRECTION GLOBALE POUR ÉCRAN D’ORDINATEUR */
+@media screen and (min-width: 1281px) {
+    /* Le thème Spectral réduit le texte à 13pt dès 1680px et moins.
+       Sur ordinateur, rétablir une taille de lecture plus confortable. */
+    body, input, select, textarea {
+        font-size: 15pt !important;
+    }
+
+    /* Garder les sections larges sans les étirer à l’infini. */
+    .wrapper > .inner {
+        width: 92% !important;
+        max-width: 1600px !important;
+    }
+
+    /* La bannière d’accueil doit occuper l’écran, plutôt qu’être aplatie. */
+    #banner {
+        height: 100vh !important;
+        min-height: 35em !important;
+        padding: 5em 0 3em 0 !important;
+    }
+
+    #banner .inner {
+        width: min(92%, 1100px) !important;
+        max-width: 1100px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+/* --- Panneau de détail d’un projet : harmonisé avec les légendes des affiches --- */
+#panneau-projet-bo {
+    display: none;
+    margin-top: 2.5rem !important;
+    padding: clamp(1.4rem, 3vw, 2.4rem) !important;
+    color: #e8d8c9 !important;
+    font-family: 'Montserrat', sans-serif !important;
+    background: linear-gradient(115deg, rgba(255,255,255,.045), rgba(0,0,0,.22)) !important;
+    border: 1px solid rgba(205,187,165,.32) !important;
+    border-radius: 3px !important;
+    box-shadow: 0 18px 45px rgba(0,0,0,.12);
+    letter-spacing: .04em;
+    line-height: 1.75;
+}
+#panneau-projet-bo #panneau-titre {
+    margin: 0 !important;
+    color: #e8d8c9 !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: clamp(1.15rem, 1.7vw, 1.45rem) !important;
+    font-weight: 500 !important;
+    line-height: 1.5 !important;
+    letter-spacing: .14em !important;
+    text-transform: uppercase !important;
+}
+#panneau-projet-bo #panneau-synopsis {
+    margin: 1.2rem 0 1.6rem !important;
+    color: rgba(255,255,255,.78) !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: .95rem !important;
+    font-weight: 300 !important;
+    line-height: 1.9 !important;
+    letter-spacing: .035em !important;
+    text-transform: none !important;
+    max-width: 75ch;
+}
+#panneau-projet-bo .soundcloud-player-container {
+    overflow: hidden;
+    border-top: 1px solid rgba(205,187,165,.25);
+    padding-top: 1.2rem;
+}
+#panneau-projet-bo #panneau-iframe {
+    display: block;
+    border: 0 !important;
+    border-radius: 2px;
+    max-width: 100%;
+}
+#panneau-projet-bo a[onclick*="fermerPanneauBO"] {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 1.6rem !important;
+    line-height: 1 !important;
+    border: 0 !important;
+    transition: color .2s ease, transform .2s ease;
+}
+#panneau-projet-bo a[onclick*="fermerPanneauBO"]:hover {
+    color: #e8d8c9 !important;
+    transform: rotate(90deg);
+}
+@media screen and (max-width: 736px) {
+    #panneau-projet-bo { margin-top: 1.6rem !important; padding: 1.2rem !important; }
+    #panneau-projet-bo #panneau-titre { font-size: 1rem !important; letter-spacing: .1em !important; }
+	#panneau-projet-bo #panneau-synopsis { font-size: .84rem !important; line-height: 1.75 !important; }
+	#panneau-projet-bo .panneau-video-col { width: 100%; min-width: 0; }
+	#panneau-projet-bo .html-style-011 { width: 100%; aspect-ratio: 16 / 9; }
+	#panneau-projet-bo #panneau-video { display: block; width: 100%; height: 100%; }
+}
+
+
+/* Restaure l'effet de zoom des affiches au survol */
+
+
+.poster-card-wrapper:hover img {
+    transform: scale(1.06) !important;
+}
+
+/* Styles déplacés depuis le bloc <style> de index.html */
+#panneau-projet-bo .panneau-fermer {
+ width:32px!important; min-width:32px!important; height:32px!important; min-height:32px!important; padding:0!important; margin:0!important;
+ display:inline-flex!important; align-items:center!important; justify-content:center!important;
+ background:transparent!important; border:0!important; box-shadow:none!important; border-radius:50%!important;
+ color:rgba(255,255,255,.8)!important; font-size:1.5rem!important; line-height:1!important; cursor:pointer; flex:0 0 32px;
+}
+#panneau-projet-bo .panneau-fermer:hover { color:#fff!important; background:rgba(255,255,255,.1)!important; }
+#panneau-projet-bo .panneau-media-titre {
+ color:#fff; font-size:.9em; font-weight:600; letter-spacing:.18em;
+ line-height:1.6; margin:0 0 1em 0; text-transform:uppercase;
+}
+#panneau-projet-bo .panneau-separateur {
+ border:0; border-top:1px solid rgba(255,255,255,.22); margin:28px 0 24px;
+}
+#panneau-projet-bo .panneau-audio-col { margin-top:0; }
+#panneau-projet-bo #panneau-soundcloud { display:block; }
+@media (max-width:736px) {
+ #panneau-projet-bo .panneau-projet-contenu { grid-template-columns:minmax(0,1fr)!important; gap:24px!important; }
+ #panneau-projet-bo { padding:22px!important; }
+}
+
+
+/* Styles déplacés depuis les attributs HTML */
+.html-style-001 { text-transform: none !important; }
+.html-style-002 { text-transform: uppercase; }
+.html-style-003 { display: flex; flex-direction: column; align-items: center; width: 100%; gap: 12px; }
+.html-style-004 { width: 300px; max-width: 100%; }
+.html-style-005 { display: block; width: 100%; box-sizing: border-box; }
+.html-style-006 { display:none; margin-top:40px; background:rgba(0,0,0,0.45); padding:30px; border-radius:8px; border:1px solid rgba(255,255,255,0.15); }
+.html-style-007 { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; flex-wrap:wrap; gap:15px; }
+.html-style-008 { margin:0; color:#fff; font-size:1.4em; }
+.html-style-009 { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:30px; align-items:start; }
+.html-style-010 { color:rgba(255,255,255,.82); font-size:1em; margin:0; line-height:1.7; white-space:pre-line; }
+.html-style-011 { position:relative; width:100%; aspect-ratio:16/9; background:rgba(255,255,255,.05); }
+.html-style-012 { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.html-style-013 { color:#aaa; padding:20px; }
+.html-style-014 { color:#aaa; font-size:.9em; margin-top:10px; }
+#panneau-projet-bo .html-style-013,
+#panneau-projet-bo .html-style-014 { font-size:1rem; line-height:1.7; }
+.html-style-015 { text-align: center; }
+.html-style-016 { color: rgba(255, 255, 255, 0.7); font-size: 0.9em; margin-bottom: 25px; }
+.html-style-017 { text-align: left !important; }
+.html-style-018 { color: rgba(255, 255, 255, 0.85) !important; font-size: 1.05em !important; line-height: 1.6 !important; margin-bottom: 25px !important; margin-top: 25px !important; }
+
+
+/* =========================================
+   LECTEUR AUDIO — STYLE ÉDITORIAL
+   ========================================= */
+
+#panneau-projet-bo .lecteur-editorial {
+  margin-top: 28px;
+  padding: 30px;
+  background: #f7f4ee;
+  color: #252a28;
+  border: 1px solid #e6e0d6;
+  border-radius: 5px;
+  box-shadow: 0 8px 24px rgba(35, 30, 20, 0.04);
+}
+
+#panneau-projet-bo .lecteur-editorial-entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+#panneau-projet-bo .lecteur-editorial-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: #77736c;
+}
+
+#panneau-projet-bo .lecteur-editorial-entete h4 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(21px, 2.5vw, 29px);
+  font-weight: 400;
+  line-height: 1.3;
+  color: #252a28;
+}
+
+#panneau-projet-bo .lecteur-editorial-index {
+  padding-top: 3px;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: #888178;
+  white-space: nowrap;
+}
+
+#panneau-projet-bo .lecteur-editorial-cadre {
+  overflow: hidden;
+  background: #fffdf9;
+  border: 1px solid #e8e2d9;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+#panneau-projet-bo #panneau-soundcloud {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 2px;
+}
+
+#panneau-projet-bo .lecteur-editorial-pied {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 22px;
+  font-size: 10px;
+  letter-spacing: 0.13em;
+  color: #817a70;
+}
+
+#panneau-projet-bo .lecteur-editorial-trait {
+  flex: 1;
+  height: 1px;
+  background: #ded7cd;
+}
+
+#panneau-projet-bo .lecteur-editorial-pied a {
+  color: #343a37;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+#panneau-projet-bo .lecteur-editorial-pied a:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  #panneau-projet-bo .lecteur-editorial {
+    padding: 18px;
+  }
+
+  #panneau-projet-bo .lecteur-editorial-index {
+    display: none;
+  }
+
+  #panneau-projet-bo .lecteur-editorial-pied {
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 8px;
+  }
+}
+
+/* Ajustements visuels du lecteur */
+#panneau-projet-bo .lecteur-editorial {
+  background: #111210;
+  color: #f4f0e8;
+  border-color: #292a27;
+}
+
+#panneau-projet-bo .lecteur-editorial-entete h4,
+#panneau-projet-bo .lecteur-editorial-label {
+  display: none;
+}
+
+#panneau-projet-bo .lecteur-editorial-entete {
+  margin-bottom: 0;
+}
+
+#panneau-projet-bo .lecteur-editorial-cadre {
+  background: #111210;
+  border-color: #292a27;
+}
+
+#panneau-projet-bo .lecteur-editorial-pied {
+  color: #aaa69d;
+}
+
+#panneau-projet-bo .lecteur-editorial-trait {
+  background: #393a36;
+}
+
+#panneau-projet-bo .lecteur-editorial-pied a {
+  color: #f4f0e8;
+}
+
+
+/* ========================================
+   LECTEUR SOUNDCLOUD — STYLE ÉDITORIAL
+   ======================================== */
+
+#panneau-projet-bo .lecteur-editorial {
+    background: #111210;
+    border: 1px solid #2b2c28;
+    border-radius: 3px;
+    padding: 18px;
+    margin-top: 24px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* Cadre du lecteur */
+#panneau-projet-bo .lecteur-editorial-cadre {
+    background: #111210;
+    border: 1px solid #292a27;
+    border-radius: 2px;
+    padding: 6px;
+    overflow: hidden;
+}
+
+/* Lecteur SoundCloud */
+#panneau-projet-bo #panneau-soundcloud {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 2px;
+}
+
+/* Pied du lecteur */
+#panneau-projet-bo .lecteur-editorial-pied {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 18px;
+    color: #aaa69d;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+/* Fine ligne décorative */
+#panneau-projet-bo .lecteur-editorial-trait {
+    flex: 1;
+    height: 1px;
+    background: #393a36;
+}
+
+/* Lien SoundCloud */
+#panneau-projet-bo .lecteur-editorial-pied a {
+    color: #e7e2d8;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+#panneau-projet-bo .lecteur-editorial-pied a:hover {
+    color: #ffffff;
+}
+
+/* Adaptation mobile */
+@media (max-width: 600px) {
+    #panneau-projet-bo .lecteur-editorial {
+        padding: 10px;
+    }
+
+    #panneau-projet-bo .lecteur-editorial-pied {
+        gap: 8px;
+        font-size: 9px;
+        letter-spacing: 0.1em;
+    }
+}
+
+
+/* Boutons de playlists : sans contour */
+details.autres-credits.autres-projets.autres-playlists
+.playlist-selector button.playlist-tab {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: inherit !important;
+    font-size: 0.85rem !important;
+    font-weight: 300 !important;
+    padding: 6px 12px !important;
+    border-radius: 0 !important;
+    opacity: 0.6;
+    transition: opacity 0.25s ease, color 0.25s ease;
+}
+
+/* Survol */
+details.autres-credits.autres-projets.autres-playlists
+.playlist-selector button.playlist-tab:hover {
+    background: transparent !important;
+    border: none !important;
+    opacity: 0.85;
+}
+
+/* Genre sélectionné */
+details.autres-credits.autres-projets.autres-playlists
+.playlist-selector button.playlist-tab.active {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    opacity: 1;
+    font-weight: 400 !important;
+}
+/* Espacement du sous-menu de playlists */
+.playlist-selector.sub-genres {
+    margin-top: -15px !important;
+    margin-bottom: 25px !important;
+    opacity: 0.9;
+}
+
+.playlist-selector.sub-genres .playlist-tab {
+    font-size: 0.78rem !important;
+    padding: 4px 10px !important;
+}
+/* =========================================================
+   BOUTONS DE GENRES PRINCIPAUX (ELECTRO, ACOUSTIQUE, ORCHESTRAL)
+   ========================================================= */
+
+/* Alignment & conteneur des genres principaux */
+.playlist-selector.main-genres {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+    margin-bottom: 25px !important;
+    flex-wrap: wrap !important;
+}
+
+/* Style affiné des 3 boutons de genres principaux */
+.playlist-selector.main-genres .playlist-tab {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    color: rgba(255, 255, 255, 0.75) !important;
+    padding: 8px 22px !important;
+    border-radius: 30px !important;
+    font-family: 'Montserrat', "Open Sans", sans-serif !important;
+    font-size: 0.8rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.15em !important;
+    text-transform: uppercase !important;
+    cursor: pointer !important;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Survol (Hover) : éclaircissement subtil de la bordure et du texte */
+.playlist-selector.main-genres .playlist-tab:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.45) !important;
+    color: #ffffff !important;
+}
+
+/* État Sélectionné (Active) : mise en valeur épurée sans lourdeur */
+.playlist-selector.main-genres .playlist-tab.active {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.85) !important;
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Sous-genres : encore plus discrets pour marquer la hiérarchie visuelle */
+.playlist-selector.sub-genres {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    margin-top: 10px !important;
+    margin-bottom: 25px !important;
+    flex-wrap: wrap !important;
+}
+
+.playlist-selector.sub-genres .playlist-tab {
+    background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+    padding: 5px 14px !important;
+    border-radius: 20px !important;
+    font-size: 0.72rem !important;
+    font-weight: 300 !important;
+    letter-spacing: 0.08em !important;
+    text-transform: none !important;
+    transition: all 0.2s ease !important;
+}
+
+.playlist-selector.sub-genres .playlist-tab:hover,
+.playlist-selector.sub-genres .playlist-tab.active {
+    border-color: rgba(255, 255, 255, 0.35) !important;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* =========================================================
+   BOUTONS DE GENRES PRINCIPAUX & SOUS-GENRES RAPPROCHÉS
+   ========================================================= */
+
+/* Alignment & conteneur des genres principaux */
+.playlist-selector.main-genres {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+    margin-bottom: 10px !important; /* Réduit pour rapprocher les sous-genres */
+    flex-wrap: wrap !important;
+}
+
+/* Style affiné des 3 boutons de genres principaux */
+.playlist-selector.main-genres .playlist-tab {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    color: rgba(255, 255, 255, 0.75) !important;
+    padding: 8px 22px !important;
+    border-radius: 30px !important;
+    font-family: 'Montserrat', "Open Sans", sans-serif !important;
+    font-size: 0.8rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.15em !important;
+    text-transform: uppercase !important;
+    cursor: pointer !important;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Survol (Hover) */
+.playlist-selector.main-genres .playlist-tab:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.45) !important;
+    color: #ffffff !important;
+}
+
+/* État Sélectionné (Active) */
+.playlist-selector.main-genres .playlist-tab.active {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.85) !important;
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Alignment & conteneur des sous-genres (très proche des genres principaux) */
+.playlist-selector.sub-genres {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    margin-top: 0px !important;   /* Supprime l'espace du haut pour coller aux genres */
+    margin-bottom: 18px !important; /* Espace modéré avant le lecteur SoundCloud */
+    flex-wrap: wrap !important;
+}
+/* --- Mode Noir Absolu (Pur) --- */
+#panneau-projet-bo .lecteur-editorial,
+.soundcloud-player-container, 
+.lecteur-editorial-cadre {
+    background: #000000 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 4px !important;
+    padding: 8px !important;
+}
+
+iframe[src*="soundcloud.com"] {
+    border: none !important;
+    /* Un filtre renforcé avec un contraste plus haut pour assombrir le gris en noir pur */
+    filter: invert(0.96) hue-rotate(180deg) contrast(1.5) brightness(0.9) !important;
+    border-radius: 2px !important;
+    display: block !important;
+}
+.soundcloud-player-container, 
+.lecteur-editorial-cadre {
+    background: #000000 !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 4px !important;
+    padding: 8px !important;
+}
+
+iframe[src*="soundcloud.com"] {
+    border: none !important;
+    filter: invert(0.93) hue-rotate(180deg) contrast(1.1) !important;
+    display: block !important;
+}
+/* --- Lecteur SoundCloud Sombre Harmonisé (Noir Absolu) --- */
+#panneau-projet-bo .lecteur-editorial,
+.soundcloud-player-container, 
+.lecteur-editorial-cadre {
+    background: #000000 !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 4px !important;
+    padding: 8px !important;
+}
+
+iframe[src*="soundcloud.com"] {
+    border: none !important;
+    filter: invert(0.95) hue-rotate(180deg) contrast(1.3) brightness(0.9) !important;
+    border-radius: 2px !important;
+    display: block !important;
+}
+/* --- Harmonisation totale du lecteur SoundCloud avec le panneau --- */
+#panneau-projet-bo .lecteur-editorial,
+.soundcloud-player-container, 
+.lecteur-editorial-cadre {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+iframe[src*="soundcloud.com"] {
+    border: none !important;
+    /* Ajustement de transparence & contraste pour fusionner le fond de l'iframe avec le panneau */
+    filter: invert(0.96) hue-rotate(180deg) contrast(1.15) brightness(0.8) !important;
+    mix-blend-mode: screen !important; /* Fusionne le noir du lecteur avec le fond du site */
+    border-radius: 4px !important;
+    display: block !important;
+}
+/* =========================================================
+   PLAYLISTS — transparence totale et style assorti au portfolio
+   ========================================================= */
+details.autres-playlists {
+  margin-top: 18px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  overflow: hidden;
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  text-align: left;
+}
+
+details.autres-playlists > summary {
+  display: flex !important;
+  align-items: center !important;
+  gap: 24px !important;
+  min-height: 104px;
+  padding: 24px 28px !important;
+  cursor: pointer;
+  list-style: none;
+  background: transparent !important;
+  background-color: transparent !important;
+  transition: background .25s ease;
+}
+
+details.autres-playlists > summary::-webkit-details-marker { display: none; }
+
+details.autres-playlists > summary:hover {
+  background: rgba(255, 255, 255, 0.035) !important;
+}
+
+details.autres-playlists .autres-projets-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+/* Titre principal Playlist aligné sur Filmographie */
+details.autres-playlists .autres-projets-description {
+  font-family: 'Oswald', 'Arial Narrow', sans-serif !important;
+  font-size: clamp(1.4rem, 2vw, 1.55rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.15em !important;
+  line-height: 1.2 !important;
+  color: #ffffff !important;
+  text-transform: uppercase !important;
+}
+
+/* Sous-titre Playlist harmonisé */
+details.autres-playlists .autres-projets-action {
+  font-family: "Open Sans", Montserrat, sans-serif !important;
+  font-size: 0.88rem !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.03em !important;
+  line-height: 1.5 !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  text-transform: none !important;
+}
+
+details.autres-playlists .autres-projets-fleche {
+  display: inline-flex;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 50%;
+  color: #f3f0e8;
+  font-size: 1.45rem;
+  font-weight: 300;
+  line-height: 1;
+  transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+details.autres-playlists > summary:hover .autres-projets-fleche {
+  transform: translateY(3px);
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+details.autres-playlists[open] > summary .autres-projets-fleche {
+  transform: rotate(180deg);
+}
+
+details.autres-playlists[open] > summary:hover .autres-projets-fleche {
+  transform: rotate(180deg) translateY(3px);
+}
+
+details.autres-playlists .credits-content {
+  margin: 0 !important;
+  padding: 25px 28px 30px !important;
+  border-top: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+/* =========================================
+   COMPOSITION, COLLABORATIONS & CONTACT
+   Harmonisation avec la direction artistique sombre et vitrée du site.
+   Les titres restent à gauche pour Composition et à droite pour Collaborations.
+   ========================================= */
+#two.wrapper,
+#Four.wrapper {
+    background: rgba(30, 30, 30, 0.58) !important;
+    background-image: none !important;
+    color: rgba(255, 255, 255, 0.88) !important;
+    border: 1px solid rgba(255, 255, 255, 0.10) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 14px 38px rgba(0, 0, 0, 0.16) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+}
+
+#two > .inner,
+#Four > .inner {
+    color: rgba(255, 255, 255, 0.88) !important;
+}
+
+#two > .inner > header.major {
+    text-align: left !important;
+    margin-bottom: 2.5rem !important;
+}
+
+#two > .inner > header.major h2,
+#two .spotlight .content h2,
+#Four .title-contact {
+    color: #fff !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+}
+
+
+#two > .inner > header.major p,
+#two .spotlight .content p,
+#Four .html-style-018 {
+    color: rgba(255, 255, 255, 0.78) !important;
+}
+
+/* Le visuel de composition reste discret pour ne pas détonner avec la DA. */
+#two .spotlight .image {
+    opacity: 0.72;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#two .spotlight .image img {
+    filter: saturate(0.55) brightness(0.72);
+    border-radius: 10px;
+}
+
+/* Le titre Collaborations reste aligné à droite. */
+#two .spotlight .content {
+    text-align: right !important;
+}
+
+#Four .inner {
+    text-align: left !important;
+}
+#Four .title-contact {
+    display: inline-block !important;
+    margin-bottom: 0.5rem !important;
+}
+#Four .btn-email {
+    background: rgba(255, 255, 255, 0.07) !important;
+    border-color: rgba(255, 255, 255, 0.24) !important;
+    box-shadow: none !important;
+}
+#Four .btn-email:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.48) !important;
+    transform: translateY(-1px);
+}
+
+@media screen and (max-width: 736px) {
+    #two .spotlight {
+        min-height: 0 !important;
+        padding: 1.5rem 0 !important;
+    }
+    #two .spotlight .content {
+        position: relative !important;
+        inset: auto !important;
+        transform: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-top: 1rem !important;
+        text-align: right !important;
+    }
+    #two .spotlight .image {
+        max-height: 220px;
+    }
+}
+
+/* Harmonisation typographique : mêmes police, taille et graisse que « Filmographie » */
+#banner h2,
+#two > .inner > header.major h2,
+#two .spotlight .content header.major h2,
+#Four .title-contact {
+    font-family: 'Manrope', 'Helvetica Neue', sans-serif !important;
+    font-size: clamp(1.8rem, 3vw, 2.45rem) !important;
+    font-weight: 800 !important;
+    line-height: 1.12 !important;
+    letter-spacing: 0.14em !important;
+    text-transform: uppercase !important;
+}
+
+/* Contact garde sa présentation, avec une taille identique aux autres titres */
+#Four .title-contact {
+    color: #f4f0e8 !important;
+}
+
+
+/* Correction finale : reprendre EXACTEMENT la typographie du titre Filmographie */
+#two > .inner > header.major h2,
+#two .spotlight .content header.major h2,
+#Four .title-contact {
+    font-family: 'Oswald', 'Arial Narrow', sans-serif !important;
+    font-size: clamp(1.8rem, 3.4vw, 2.7rem) !important;
+    font-weight: 400 !important;
+    letter-spacing: .19em !important;
+    line-height: 1.12 !important;
+    color: #e8d8c9 !important;
+    text-transform: uppercase !important;
+}
+@media screen and (max-width: 736px) {
+    #two > .inner > header.major h2,
+    #two .spotlight .content header.major h2,
+    #Four .title-contact { letter-spacing: .12em !important; }
+}
+
+/* =========================================================
+   AFFICHES DE LA FILMOGRAPHIE — règles uniques et cohérentes
+   Les images restent entières, sans découpage.
+   ========================================================= */
+#one .poster-card-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 5 / 6;
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+#one .poster-card-wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+#one .poster-card-wrapper:hover img {
+    transform: scale(1.02);
+}
+
+
+/* ===== Ajustement final : affiches uniformes et titre d'accueil harmonisé ===== */
+#one .poster-card-wrapper {
+    width: 100% !important;
+    aspect-ratio: 3 / 4 !important;
+    height: auto !important;
+    overflow: hidden !important;
+    display: block !important;
+    background: #17191b;
+}
+#one .poster-card-wrapper img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+}
+/* Même famille typographique que Filmographie, avec les filets du bandeau conservés. */
+#banner h2 {
+    font-family: 'Oswald', 'Arial Narrow', sans-serif !important;
+    font-size: clamp(2.25rem, 4.3vw, 3.45rem) !important;
+    font-weight: 400 !important;
+    letter-spacing: .19em !important;
+    line-height: 1.12 !important;
+    color: #e8d8c9 !important;
+    text-transform: uppercase !important;
+    padding: .45em .65em !important;
+}
+#banner h2::before,
+#banner h2::after {
+    background: #c7b99b !important;
+    height: 1px !important;
+}
+@media screen and (max-width: 736px) {
+    #banner h2 {
+        font-size: clamp(1.65rem, 7vw, 2.25rem) !important;
+        letter-spacing: .12em !important;
+        padding: .45em .25em !important;
+    }
+}
+
+
+/* Harmonisation des traits DEJA présents : aucune ligne supplémentaire créée. */
+#one header.major h2::after,
+#two header.major h2::after,
+#three header.major h2::after,
+#Four header.major h2::after,
+#two .spotlight .content header.major h2::after,
+#Four .title-contact::after {
+    background-color: #c7b99b !important;
+    border-color: #c7b99b !important;
+    height: 1px !important;
+}
+
+
+/* ===== Style des titres de section : même finition que Filmographie, hors titre principal ===== */
+#one > .inner > header.major h2,
+#two > .inner > header.major h2,
+#three > .inner > header.major h2,
+#Four > .inner > header.major h2,
+#two .spotlight .content header.major h2,
+#Four .title-contact {
+    color: #e8d8c9 !important;
+    font-family: 'Oswald', 'Arial Narrow', sans-serif !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+    letter-spacing: .19em !important;
+    line-height: 1.12 !important;
+}
+/* On recolore et uniformise uniquement les traits déjà présents. */
+#one > .inner > header.major h2::after,
+#two > .inner > header.major h2::after,
+#three > .inner > header.major h2::after,
+#Four > .inner > header.major h2::after,
+#two .spotlight .content header.major h2::after,
+#Four .title-contact::after {
+    background-color: #c7b99b !important;
+    border-color: #c7b99b !important;
+    height: 1px !important;
+}
+@media screen and (max-width: 736px) {
+    #one > .inner > header.major h2,
+    #two > .inner > header.major h2,
+    #three > .inner > header.major h2,
+    #Four > .inner > header.major h2,
+    #two .spotlight .content header.major h2,
+    #Four .title-contact {
+        letter-spacing: .12em !important;
+    }
+}
+
+
+/* Un seul filet fin sous Composition, Collaborations et Contacts,
+   dans le même esprit que le titre Filmographie. */
+#two > .inner > header.major h2,
+#two .spotlight .content header.major h2,
+#Four .title-contact {
+    text-decoration: none !important;
+    border-bottom: 0 !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding-bottom: .18em !important;
+}
+#two > .inner > header.major h2::after,
+#two .spotlight .content header.major h2::after,
+#Four .title-contact::after {
+    content: '' !important;
+    display: block !important;
+    width: 100% !important;
+    height: 1px !important;
+    margin-top: .12em !important;
+    background: #c7b99b !important;
+    border: 0 !important;
+}
+
+
+/* Correction : traits de titres en blanc, comme celui de Filmographie */
+#one h2::after,
+#two h2::after,
+#three h2::after,
+#four h2::after,
+#composition h2::after,
+#collaboration h2::after,
+#contact h2::after {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+
+/* Correction definitive : tous les filets de titres reprennent le blanc de Filmographie.
+   On neutralise aussi les anciens soulignements beige/jaune qui pouvaient rester actifs. */
+#one > .inner > header.major::after,
+#two > .inner > header.major::after,
+#two .spotlight .content header.major::after,
+#Four .title-contact::after,
+#one > .inner > header.major h2::after,
+#two > .inner > header.major h2::after,
+#two .spotlight .content header.major h2::after,
+#Four .title-contact::after {
+    background: #fff !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+    box-shadow: none !important;
+}
+#two > .inner > header.major h2,
+#two .spotlight .content header.major h2,
+#Four .title-contact {
+    text-decoration: none !important;
+    border-bottom-color: #fff !important;
+    box-shadow: none !important;
+}
+
+
+/* Ajustement final : même espace entre le titre et le filet que pour Filmographie */
+#two > .inner > header.major h2::after,
+#two .spotlight .content header.major h2::after,
+#Four .title-contact::after {
+    margin-top: 0.75rem !important;
+}
+
+#two > .inner > header.major h2,
+#two .spotlight .content header.major h2,
+#Four .title-contact {
+    padding-bottom: 0 !important;
+    border-bottom: 0 !important;
+}
+
+
+/* Dernier ajustement : rapprocher le trait de Filmographie comme les autres titres. */
+#one > .inner > header.major h2::after {
+    margin-top: 0.12em !important;
+}
+/* ===== HARMONISATION DE TOUS LES TITRES (TAILLE RÉDUITE) ===== */
+#one > .inner > header.major h2,
+#two > .inner > header.major h2,
+#three > .inner > header.major h2,
+#Four > .inner > header.major h2,
+#two .spotlight .content header.major h2,
+#Four .title-contact {
+    font-family: 'Oswald', 'Arial Narrow', sans-serif !important;
+    font-size: clamp(1.4rem, 2.5vw, 2.05rem) !important; /* Taille plus petite et homogène */
+    font-weight: 400 !important;
+    letter-spacing: .19em !important;
+    line-height: 1.12 !important;
+    color: #e8d8c9 !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+    padding-bottom: 0 !important;
+}
+
+/* ===== UNIFORMISATION DU TRAIT BLANC ===== */
+#one > .inner > header.major h2::after,
+#two > .inner > header.major h2::after,
+#three > .inner > header.major h2::after,
+#Four > .inner > header.major h2::after,
+#two .spotlight .content header.major h2::after,
+#Four .title-contact::after {
+    content: '' !important;
+    display: block !important;
+    width: 100% !important;
+    height: 1px !important;
+    margin-top: 0.6rem !important;
+    background: #fff !important;
+    background-color: #fff !important;
+    border: 0 !important;
+}
+/* ===== LES DEUX TRAITS DU TITRE PRINCIPAL EN BLANC ===== */
+#banner h2::before,
+#banner h2::after {
+    background: #fff !important;
+    background-color: #fff !important;
+    height: 1px !important;
+}
+/* =========================================================
+   HARMONISATION GLOBALE DES TEXTES (Sections 2 & Contact)
+   avec la police et le style épuré de la Filmographie
+   ========================================================= */
+
+/* Cible tous les paragraphes, sous-titres et textes descriptifs dans la section 2 et le Contact */
+#two .spotlight .content p,
+#two > .inner > header.major p,
+#Four .html-style-018,
+#Four p,
+#Four span,
+#Four div {
+    font-family: 'Open Sans', Helvetica, sans-serif !important;
+    font-size: 0.95rem !important;
+    font-weight: 300 !important;
+    letter-spacing: 0.04em !important;
+    line-height: 1.8 !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-transform: none !important;
+}
+
+/* Harmonisation spécifique pour les textes "En cours...", "Envie de collaborer", etc. */
+#two .spotlight .content h3,
+#two .spotlight .content p,
+#Four .html-style-018 {
+    font-family: 'Open Sans', Helvetica, sans-serif !important;
+}
+/* =========================================================
+   RÉDUCTION DE L'ESPACE ENTRE LES BOUTONS ET LA FILMOGRAPHIE
+   ========================================================= */
+
+/* 1. Réduit la hauteur minimale globale de la bannière d'accueil */
+#banner {
+    height: auto !important;
+    min-height: auto !important;
+    padding-top: 4em !important;
+    padding-bottom: 2em !important; /* Réduit l'espace sous les boutons */
+}
+
+/* 2. Réduit l'espace sous la liste des boutons */
+#banner ul.actions.special {
+    margin-bottom: 0 !important; /* Supprime les marges inutiles sous les boutons */
+}
+
+/* 3. Réduit la marge supérieure de la section Filmographie qui suit */
+#one.wrapper {
+    margin-top: 20px !important; /* Rapproche l'encart sombre des boutons */
+}
+/* =========================================================
+   SUPPRESSION DU VOILE / BANDEAU GRIS AU CHARGEMENT (PRELOAD)
+   ========================================================= */
+
+/* Neutralise l'animation de masquage et force l'opacité à 1 tout de suite */
+body.is-preload *, 
+body.is-preload *:before, 
+body.is-preload *:after {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
+#page-wrapper {
+    opacity: 1 !important;
+}
+
+/* Désactive l'overlay de fond gris de la bannière au chargement */
+#banner:after,
+body.is-preload #banner:after {
+    display: none !important;
+    opacity: 0 !important;
+    background: transparent !important;
+}
+/* =========================================================
+   APPARITION CINÉMATOGRAPHIQUE LENTE ET DÉCALÉE
+   ========================================================= */
+
+/* 1. Animation en fondu doux et très progressif */
+@keyframes fadeInSlow {
+    from {
+        opacity: 0;
+        transform: translateY(18px); /* Légère remontée douce */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 2. Le titre apparaît doucement en premier (durée : 1.8s) */
+#banner h2 {
+    animation: fadeInSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+}
+
+/* 3. Le texte de présentation suit avec un léger retard (délai : 0.4s) */
+#banner p {
+    opacity: 0;
+    animation: fadeInSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards !important;
+}
+
+#banner p.html-style-001 {
+    color: rgba(255, 255, 255, 0.78) !important;
+    font-family: 'Open Sans', Helvetica, sans-serif !important;
+    font-size: clamp(0.9rem, 1.35vw, 1.05rem) !important;
+    font-weight: 300 !important;
+    letter-spacing: 0.08em !important;
+    line-height: 1.8 !important;
+}
+
+#banner p.html-style-001 strong {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 400 !important;
+}
+
+/* 4. Les boutons arrivent ensuite (délai : 0.8s) */
+#banner ul.actions.special {
+    opacity: 0;
+    animation: fadeInSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards !important;
+}
+
+/* 5. La section Filmographie s'installe en dernier (délai : 1.2s) */
+#one.wrapper {
+    opacity: 0;
+    animation: fadeInSlow 2s cubic-bezier(0.16, 1, 0.3, 1) 1.2s forwards !important;
+}
+/* =========================================================
+   FOND LÉGER, ÉCLAIRCI ET SANS BORDURE
+   ========================================================= */
+
+.wrapper,
+#one.wrapper,
+#two.wrapper,
+#three.wrapper,
+#Four.wrapper,
+details.autres-projets:not(.autres-playlists) {
+    background: rgba(45, 50, 58, 0.35) !important; /* Fond subtil et moins foncé */
+    border: none !important;                         /* Supprime complètement le trait autour */
+    box-shadow: 0 14px 38px rgba(0, 0, 0, 0.12) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+}
+
+/* Idem pour l'accordéon des autres projets / playlists si nécessaire */
+details.autres-projets,
+details.autres-playlists {
+    border: none !important;
+}
+/* =========================================================
+   ACCORDÉONS : MÊME TEINTE INTERMÉDIAIRE (PLUS SOMBRE QUE LE FOND, MOINS SOMBRE QUE LE HAUT)
+   ========================================================= */
+details.autres-projets:not(.autres-playlists),
+details.autres-playlists {
+    background: rgba(18, 21, 26, 0.75) !important; /* Teinte intermédiaire harmonieuse */
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+/* =========================================================
+   SUPPRESSION DES FONDS DES ACCORDÉONS (TRANSPARENCE TOTALE)
+   ========================================================= */
+
+details.autres-projets:not(.autres-playlists),
+details.autres-playlists {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* =========================================================
+   TRANSPARENCE TOTALE POUR TOUTES LES SECTIONS ET ENCARTS
+   ========================================================= */
+
+.wrapper,
+#one.wrapper,
+#two.wrapper,
+#three.wrapper,
+#Four.wrapper,
+details.autres-projets:not(.autres-playlists),
+details.autres-playlists {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+/* =========================================================
+   HARMONISATION ET AGRANDISSEMENT DES DEUX ACCORDÉONS
+   ========================================================= */
+
+/* 1. Harmonisation des deux titres principaux (EXPLORER TOUS LES PROJETS & PLAYLISTS PAR GENRE MUSICAL) */
+details.autres-projets .autres-projets-titre,
+details.autres-playlists .autres-projets-description {
+    font-family: 'Oswald', 'Arial Narrow', sans-serif !important;
+    font-size: clamp(1.7rem, 2vw, 1.55rem) !important; /* Taille agrandie et identique */
+    font-weight: 500 !important;
+    letter-spacing: 0.15em !important;                  /* Espacement cinématique */
+    line-height: 1.2 !important;
+    color: #ffffff !important;
+    text-transform: uppercase !important;
+}
+
+/* 2. Harmonisation des deux sous-titres (Documentaires... & Classique...) */
+details.autres-projets .autres-projets-description,
+details.autres-playlists .autres-projets-action {
+    font-family: "Open Sans", Montserrat, sans-serif !important;
+    font-size: 0.88rem !important;                     /* Taille uniforme pour le sous-texte */
+    font-weight: 300 !important;
+    letter-spacing: 0.03em !important;
+    line-height: 1.5 !important;
+    color: rgba(255, 255, 255, 0.75) !important;
+    text-transform: none !important;                   /* Minuscules naturelles */
+}
+
+/* 3. Ajustement de l'alignement de la flèche ronde à droite */
+details.autres-projets > summary,
+details.autres-playlists > summary {
+    align-items: center !important;
+}
+/* =========================================================
+   ANNULATION TOTALE DU FOND NOIR À L'OUVERTURE DE L'ACCORDÉON PLAYLIST
+   ========================================================= */
+
+details.autres-playlists[open],
+details.autres-playlists[open] > summary,
+details.autres-playlists[open] .credits-content,
+details.autres-playlists summary:active,
+details.autres-playlists summary:focus {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Neutralise tout fond potentiellement appliqué aux enfants directs ou conteneurs internes */
+details.autres-playlists[open] * {
+  background-color: transparent !important;
+}
+
+/* S'assure que le contenu affiché à l'intérieur garde ses boutons lisibles sans forcer de fond global opaque */
+details.autres-playlists[open] .playlist-tab {
+  background: rgba(255, 255, 255, 0.03) !important;
+}
+/* =========================================================
+   AGRANDISSEMENT LÉGER DES TITRES D'ACCORDÉONS (Projets & Playlists)
+   ========================================================= */
+
+/* Titres principaux des accordéons */
+details.autres-projets .autres-projets-titre,
+details.autres-playlists .autres-projets-description,
+details.autres-playlists .autres-projets-titre {
+    font-family: 'Oswald', 'Arial Narrow', sans-serif !important;
+    font-size: clamp(1.85rem, 2.3vw, 2.1rem) !important; /* Légèrement agrandi (était à 1.7rem - 1.85rem) */
+    font-weight: 500 !important;
+    letter-spacing: 0.16em !important;
+    line-height: 1.2 !important;
+    color: #ffffff !important;
+    text-transform: uppercase !important;
+}
+
+/* Ajustement proportionnel du sous-texte si souhaité */
+details.autres-projets .autres-projets-description,
+details.autres-playlists .autres-projets-action,
+details.autres-playlists p {
+    font-size: 0.92rem !important; /* Ajusté de 0.88rem à 0.92rem */
+}
+/* =========================================================
+   BLANC PUR ÉCLATANT POUR LES DEUX ACCORDÉONS (Projets & Playlists)
+   ========================================================= */
+
+/* Forcer le blanc pur sur les titres principaux des deux accordéons */
+details.autres-projets .autres-projets-titre,
+details.autres-projets .autres-projets-kicker,
+details.autres-playlists .autres-projets-description,
+details.autres-playlists .autres-projets-titre {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Forcer la même teinte blanche lumineuse sur le sous-titre "Documentaires, séries et films" */
+details.autres-projets .autres-projets-description {
+    color: rgba(255, 255, 255, 0.85) !important;
+    opacity: 1 !important;
+}
+/* =========================================================
+   SUPPRESSION DE LA BORDURE AUTOUR DES BOUTONS DE LA BANNIÈRE
+   ========================================================= */
+
+#banner .actions.special .button.primary {
+    border: none !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+#banner .actions.special .button.primary:hover {
+    border: none !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+/* =========================================================
+   SUPPRESSION TOTALE DU FOND NOIR DES LECTEURS SOUNDCLOUD
+   ========================================================= */
+
+#panneau-projet-bo .lecteur-editorial,
+.soundcloud-player-container, 
+.lecteur-editorial-cadre {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+iframe[src*="soundcloud.com"] {
+    background: transparent !important;
+    border: none !important;
+    filter: none !important; /* Retire le filtre d'inversion */
+    mix-blend-mode: normal !important;
+    border-radius: 4px !important;
+    display: block !important;
+}
+#one .poster-card-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 5 / 6; /* Remplacez 2 / 3 par 3 / 4 ou 4 / 5 pour les rendre moins hautes */
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Grille des projets : une seule définition pour les cartes, affiches et légendes. */
+details.autres-projets:not(.autres-playlists) .credits-content .credits-list {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 220px)) !important;
+    justify-content: center !important;
+    gap: 30px !important;
+    margin: 0 !important;
+    padding: 20px 0 !important;
+    list-style: none !important;
+    background: transparent !important;
+}
+
+details.autres-projets:not(.autres-playlists) .credits-list li {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    transition: background 220ms ease, padding 220ms ease;
+}
+
+details.autres-projets:not(.autres-playlists) .credits-list li:hover {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    background: rgba(255, 255, 255, 0.025) !important;
+}
+
+details.autres-projets:not(.autres-playlists) .credit-thumb {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 2 / 3 !important;
+    margin: 0 0 12px !important;
+    border: 0 !important;
+    border-radius: 4px !important;
+    background: transparent !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    transition: transform 0.3s ease;
+}
+
+details.autres-projets:not(.autres-playlists) .credit-thumb:hover {
+    transform: scale(1.03);
+}
+
+details.autres-projets:not(.autres-playlists) .credit-info {
+    display: flex !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 5px !important;
+    color: #f1eee8 !important;
+    font-size: 0.85rem !important;
+    line-height: 1.4 !important;
+    letter-spacing: 0.01em !important;
+    text-align: left !important;
+}
+
+details.autres-projets:not(.autres-playlists) .credit-category {
+    display: block !important;
+    margin-bottom: 2px !important;
+    color: #b7a58c !important;
+    font-size: 0.65rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.15em !important;
+    line-height: 1.5 !important;
+    text-transform: uppercase !important;
+}
+
+details.autres-projets:not(.autres-playlists) .credit-heading {
+    display: flex !important;
+    width: 100% !important;
+    flex-wrap: wrap !important;
+    align-items: baseline !important;
+    gap: 6px !important;
+}
+
+details.autres-projets:not(.autres-playlists) .credit-heading-with-subtitles {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 2px !important;
+}
+
+details.autres-projets:not(.autres-playlists) .credit-info strong {
+    color: #f5f2ec !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.02em !important;
+    line-height: 1.45 !important;
+}
+
+details.autres-projets:not(.autres-playlists) .credit-related-titles {
+    color: rgba(245, 242, 236, 0.9) !important;
+    font-size: 0.75rem !important;
+    line-height: 1.5 !important;
+}
+
+details.autres-projets:not(.autres-playlists) .credit-year {
+    display: none !important;
+    color: #c9c2b8 !important;
+    font-size: 0.85rem !important;
+}
+
+details.autres-projets:not(.autres-playlists) .credit-role {
+    display: block !important;
+    color: rgba(238, 234, 226, 0.65) !important;
+    font-size: 0.78rem !important;
+    letter-spacing: 0.02em !important;
+    line-height: 1.55 !important;
+}
+
+details.autres-projets:not(.autres-playlists) .credit-arrow,
+details.autres-projets:not(.autres-playlists) .credit-separator {
+    display: none !important;
+}
+/* Carrousel des affiches principales. */
+.poster-carousel-wrapper-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+.poster-carousel-container {
+    position: relative;
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.poster-carousel-track {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 10px 5px 20px;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 24px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.poster-carousel-track::-webkit-scrollbar {
+    display: none;
+}
+
+.poster-slide {
+    flex: 0 0 calc((100% - 60px) / 3);
+    scroll-snap-align: center;
+}
+
+.carousel-btn {
+    display: flex;
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: rgba(243, 240, 232, 0.58);
+    font-size: 1.45rem;
+    font-weight: 300;
+    line-height: 1;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.025) !important;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.prev-btn {
+    order: -1;
+}
+
+.prev-btn:hover {
+    transform: translate(-3px, -1px);
+}
+
+.next-btn:hover {
+    transform: translate(3px, -1px);
+}
+
+.carousel-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0 25px;
+}
+
+.carousel-dots .dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-dots .dot.active {
+    transform: scale(1.25);
+    background: #c7b99b !important;
+}
+
+@media screen and (max-width: 980px) {
+    .carousel-btn {
+        width: 38px;
+        height: 38px;
+        flex-basis: 38px;
+    }
+
+    .poster-carousel-track {
+        gap: 20px;
+        padding: 10px 0 20px;
+    }
+
+    .poster-slide {
+        flex: 0 0 220px !important;
+    }
+
+    .carousel-dots {
+        gap: 8px;
+    }
+
+    .carousel-dots .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .carousel-dots .dot.active {
+        transform: scale(1.3);
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .poster-carousel-wrapper-outer {
+        gap: 8px;
+    }
+
+    .poster-carousel-container {
+        flex: 1 1 100%;
+    }
+
+    .poster-carousel-track {
+        gap: 18px;
+        padding: 10px 0 18px;
+        scroll-padding-inline: 13%;
+    }
+
+    .poster-slide {
+        flex: 0 0 min(72vw, 260px) !important;
+        scroll-snap-align: center !important;
+    }
+
+    .carousel-btn {
+        width: 34px;
+        height: 34px;
+        flex-basis: 34px;
+        font-size: 1.1rem;
+    }
+
+    .carousel-dots {
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    details.autres-playlists .playlist-selector.main-genres {
+        flex-direction: column !important;
+        gap: 2px !important;
+        margin-bottom: 16px !important;
+    }
+
+    details.autres-playlists .playlist-selector.main-genres button.playlist-tab {
+        min-height: 44px !important;
+        margin: 0 !important;
+        padding: 8px 14px !important;
+        line-height: 1.3 !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #banner ul.actions.special {
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 12px !important;
+    }
+
+    #banner ul.actions.special li {
+        flex: 1 1 0;
+        width: auto !important;
+        padding: 0 !important;
+    }
+
+    #banner ul.actions.special li > .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0 0.5em !important;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    details.autres-playlists {
+        margin-top: 30px !important;
+    }
+
+    details.autres-playlists > summary {
+        min-height: 0 !important;
+        gap: 12px !important;
+        padding: 20px 16px 18px !important;
+    }
+
+    details.autres-playlists > summary .autres-projets-copy {
+        gap: 0 !important;
+    }
+
+    details.autres-playlists > summary .autres-projets-description {
+        font-size: 0.72rem !important;
+        letter-spacing: 0.11em !important;
+        line-height: 1.5 !important;
+    }
+
+    details.autres-playlists > summary .autres-projets-action {
+        margin-top: 18px !important;
+        font-size: 0.61rem !important;
+        letter-spacing: 0.14em !important;
+        line-height: 1.5 !important;
+    }
+
+    details.autres-playlists > summary .autres-projets-fleche {
+        flex-basis: 38px !important;
+        width: 38px !important;
+        height: 38px !important;
+        font-size: 1rem !important;
+    }
+
+    details.autres-playlists > summary .autres-projets-indice {
+        max-width: 82px;
+        font-size: 0.56rem;
+    }
+}
+
+    #Four .about-contact {
+        margin: 2rem 0 2.5rem;
+    }
+
+    #Four .about-contact h3 {
+        margin-bottom: 1rem;
+        color: #f4f0e8;
+        font-family: 'Oswald', 'Arial Narrow', sans-serif;
+        font-size: 1.35rem;
+        font-weight: 400;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+    }
+
+    #Four .about-contact-content {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(180px, 260px);
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #Four .about-biography {
+        margin: 0;
+    }
+
+    #Four .about-photo-placeholder {
+        display: grid;
+        min-height: 0;
+        place-items: center;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        color: rgba(255, 255, 255, 0.65);
+        text-align: center;
+    }
+
+    #Four .about-photo-placeholder > span {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    #Four .about-photo-placeholder img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: 736px) {
+        #Four .about-contact-content {
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        #Four .about-photo-placeholder {
+            min-height: 220px;
+        }
+    }
+
+    .reference-strip {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: none;
+        margin: 1.45rem 0 0 !important;
+        padding: 0 clamp(0.75rem, 3vw, 2rem) 0.35rem;
+        text-align: center;
+        opacity: 1;
+    }
+
+    #Four .html-style-018 {
+        margin-bottom: 0 !important;
+    }
+
+    .reference-kicker {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(0.75rem, 2.5vw, 1.5rem);
+        width: 100%;
+        margin: 0 0 1rem !important;
+        padding: 0 !important;
+        border-bottom: 0 !important;
+        color: #e8d8c9 !important;
+        font-family: 'Oswald', 'Arial Narrow', sans-serif !important;
+        font-size: clamp(0.9rem, 1.25vw, 1.15rem) !important;
+        font-weight: 400 !important;
+        letter-spacing: .16em !important;
+        line-height: 1.12 !important;
+        text-transform: uppercase !important;
+        text-align: center;
+    }
+
+    .reference-kicker::before,
+    .reference-kicker::after {
+        content: '' !important;
+        display: block !important;
+        flex: 1 1 0;
+        max-width: 10rem;
+        width: auto !important;
+        height: 1px !important;
+        margin: 0 !important;
+        background: rgba(255, 255, 255, 0.38) !important;
+    }
+
+    .reference-logos {
+        display: grid !important;
+        width: min(100%, 1000px);
+        margin: 0 auto;
+        grid-template-columns: repeat(auto-fit, minmax(76px, 1fr)) !important;
+        gap: clamp(0.5rem, 1.5vw, 1rem);
+    }
+
+    .reference-logos > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 0;
+        border-bottom: 0 !important;
+        box-shadow: none !important;
+        text-decoration: none !important;
+    }
+
+    .reference-logos > a:hover,
+    .reference-logos > a:focus,
+    .reference-logos > a:active {
+        border-bottom: 0 !important;
+        box-shadow: none !important;
+        text-decoration: none !important;
+    }
+
+    .reference-logos > a::before,
+    .reference-logos > a::after {
+        content: none !important;
+        display: none !important;
+    }
+
+    .reference-logos > a:focus-visible {
+        outline: 2px solid #e8d8c9;
+        outline-offset: 4px;
+    }
+
+    .reference-logo-slot {
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        width: 76px;
+        height: 34px;
+        padding: 0.25rem;
+        border: 1px dashed rgba(255, 255, 255, 0.12);
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.01);
+    }
+
+    .reference-logo-slot img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .reference-logos > img,
+    .reference-logos > a > img {
+        display: block !important;
+        box-sizing: border-box;
+        width: 100% !important;
+        height: clamp(60px, 5vw, 72px) !important;
+        min-width: 0;
+        padding: 0;
+        object-fit: contain;
+        border: 0 !important;
+        border-radius: 0;
+        background: transparent !important;
+        box-shadow: none !important;
+        opacity: 1;
+        transition: filter 0.2s ease, transform 0.2s ease;
+    }
+
+    .reference-logos > a:hover > img,
+    .reference-logos > a:focus-visible > img {
+        filter: brightness(0) invert(1);
+        transform: scale(1.08);
+    }
+
+    .reference-logos > img[src$="franceO.png"],
+    .reference-logos > a > img[src$="franceO.png"],
+    .reference-logos > img[src$="lesfilmsenvrac.png"],
+    .reference-logos > a > img[src$="lesfilmsenvrac.png"],
+    .reference-logos > img[src$="RMN.png"],
+    .reference-logos > a > img[src$="RMN.png"] {
+        transform: scale(1.25);
+    }
+
+    .reference-logos > a:hover > img[src$="franceO.png"],
+    .reference-logos > a:focus-visible > img[src$="franceO.png"],
+    .reference-logos > a:hover > img[src$="lesfilmsenvrac.png"],
+    .reference-logos > a:focus-visible > img[src$="lesfilmsenvrac.png"],
+    .reference-logos > a:hover > img[src$="RMN.png"],
+    .reference-logos > a:focus-visible > img[src$="RMN.png"] {
+        transform: scale(1.35);
+    }
+
+    @media screen and (max-width: 736px) {
+        .reference-strip {
+            margin-top: 1.45rem !important;
+        }
+
+        .reference-logos {
+            grid-template-columns: repeat(auto-fit, minmax(76px, 1fr)) !important;
+            gap: 0.5rem;
+        }
+
+        .reference-logo-slot {
+            width: 68px;
+            height: 30px;
+        }
+
+        .reference-logos > img,
+        .reference-logos > a > img {
+            height: clamp(54px, 14vw, 64px) !important;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        #banner {
+            height: auto !important;
+            min-height: 0 !important;
+            padding: clamp(4rem, 9vh, 6rem) 0 2.5rem !important;
+        }
+
+        #banner .inner {
+            width: min(92%, 800px) !important;
+            max-width: 800px !important;
+        }
+
+        #one.wrapper,
+        #two.wrapper,
+        #Four.wrapper {
+            margin-top: 0 !important;
+            padding-top: 2.5rem !important;
+            padding-bottom: 2.5rem !important;
+        }
+
+        #one > .inner,
+        #two > .inner,
+        #Four > .inner {
+            width: 92% !important;
+        }
+
+        #two .spotlight .content {
+            width: 100% !important;
+        }
+
+        #banner ul.actions.special .button {
+            min-height: 44px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        details.autres-playlists .playlist-selector .playlist-tab {
+            min-height: 44px;
+        }
+
+        .carousel-btn {
+            width: 44px;
+            height: 44px;
+            flex-basis: 44px;
+        }
+    }
+
+    @media screen and (max-width: 736px) {
+        #banner {
+            padding: 3.5rem 0 2rem !important;
+        }
+
+        #banner h2 {
+            font-size: clamp(1.55rem, 6vw, 2rem) !important;
+            letter-spacing: 0.1em !important;
+            line-height: 1.2 !important;
+        }
+
+        #banner p {
+            max-width: 34rem;
+            margin: 1.25rem auto 1.75rem;
+            font-size: 0.9rem !important;
+            line-height: 1.7 !important;
+        }
+
+        #one > .inner > header.major,
+        #two > .inner > header.major {
+            margin-bottom: 1.5rem !important;
+        }
+
+        #one > .inner > header.major h2,
+        #two > .inner > header.major h2,
+        #two .spotlight .content header.major h2,
+        #Four .title-contact {
+            font-size: clamp(1.5rem, 5vw, 1.9rem) !important;
+            letter-spacing: 0.12em !important;
+        }
+
+        .poster-carousel-wrapper-outer {
+            position: relative;
+            display: block;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .poster-carousel-container {
+            width: 100%;
+        }
+
+        .poster-carousel-track {
+            box-sizing: border-box;
+            width: 100%;
+            padding-right: calc((100% - 220px) / 2);
+            padding-left: calc((100% - 220px) / 2);
+        }
+
+        .poster-slide {
+            flex-basis: 220px !important;
+        }
+
+        .poster-carousel-wrapper-outer .carousel-btn {
+            display: none !important;
+        }
+
+        .film-caption {
+            font-size: 0.68rem !important;
+            letter-spacing: 0.08em !important;
+        }
+
+        details.autres-projets > summary,
+        details.autres-playlists > summary {
+            min-height: 64px !important;
+        }
+
+        details.autres-playlists .playlist-selector.main-genres {
+            display: grid !important;
+            width: 100%;
+            box-sizing: border-box;
+                grid-template-columns: minmax(0, 1fr);
+            gap: 6px !important;
+            margin-bottom: 12px !important;
+        }
+
+        details.autres-playlists .playlist-selector.main-genres .playlist-tab {
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            min-width: 0;
+            min-height: 44px !important;
+            align-items: center;
+            justify-content: center;
+            margin: 0 !important;
+            padding: 6px 4px !important;
+            font-size: 0.68rem !important;
+            letter-spacing: 0.07em !important;
+            line-height: 1.25 !important;
+            text-align: center;
+        }
+
+        details.autres-playlists .playlist-selector.sub-genres {
+            display: grid !important;
+            width: 100%;
+            box-sizing: border-box;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 6px !important;
+            margin: 0 0 16px !important;
+        }
+
+        details.autres-playlists .playlist-selector.sub-genres .playlist-tab {
+            width: 100%;
+            box-sizing: border-box;
+            min-width: 0;
+            min-height: 44px;
+            padding: 8px 6px !important;
+            font-size: 0.7rem !important;
+            letter-spacing: 0.03em !important;
+            text-align: center;
+        }
+
+        #soundcloud-player-container {
+            width: 100%;
+        }
+
+        #soundcloud-player-container iframe {
+            height: 400px;
+        }
+
+        #Four .about-contact {
+            margin: 1.5rem 0 2rem;
+        }
+
+        #Four .about-contact-content {
+            grid-template-columns: minmax(0, 1fr);
+            gap: 1rem;
+        }
+
+        #Four .about-biography,
+        #Four .about-photo-placeholder {
+            min-width: 0;
+            max-width: 100%;
+        }
+
+        #Four .about-biography {
+			font-size: 0.82rem !important;
+            line-height: 1.75 !important;
+        }
+
+        #footer {
+            padding: 2.5rem 1rem !important;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        #banner ul.actions.special {
+            display: grid !important;
+            grid-template-columns: minmax(0, 1fr);
+            width: 100%;
+            gap: 8px !important;
+            margin-top: 1.5rem !important;
+        }
+
+        #banner ul.actions.special li {
+            grid-column: auto !important;
+            width: 100% !important;
+            min-width: 0;
+            margin: 0 !important;
+        }
+
+        #banner ul.actions.special li > .button {
+            box-sizing: border-box;
+            width: 100%;
+            min-height: 44px;
+            padding: 0 0.75rem !important;
+            font-size: 0.65rem !important;
+            letter-spacing: 0.09em !important;
+        }
+
+        .poster-slide {
+            flex-basis: min(220px, calc(100vw - 140px)) !important;
+        }
+
+        .poster-carousel-track {
+            padding-right: max(0px, calc((100% - min(220px, calc(100vw - 140px))) / 2));
+            padding-left: max(0px, calc((100% - min(220px, calc(100vw - 140px))) / 2));
+        }
+
+        .poster-carousel-wrapper-outer .carousel-btn {
+            width: 36px;
+            height: 44px;
+            font-size: 1.2rem;
+        }
+
+        #soundcloud-player-container iframe {
+            height: 360px;
+        }
+
+        #Four .about-photo-placeholder {
+            width: min(58%, 150px);
+            justify-self: center;
+        }
+
+        #Four .html-style-018 {
+            font-size: 0.9rem !important;
+            line-height: 1.7 !important;
+        }
+
+        #footer .copyright {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem 1rem;
+            line-height: 1.6;
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        #banner h2 {
+            max-width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: clamp(1.15rem, 7vw, 1.4rem) !important;
+            letter-spacing: 0.06em !important;
+            overflow-wrap: anywhere;
+        }
+
+        #one > .inner > header.major h2,
+        #two > .inner > header.major h2,
+        #Four .title-contact {
+            max-width: 100%;
+            font-size: clamp(1.15rem, 7vw, 1.4rem) !important;
+            letter-spacing: 0.06em !important;
+            overflow-wrap: anywhere;
+        }
+
+        #two .spotlight .content,
+        #two .spotlight .content header.major,
+        #two .spotlight .content header.major h2 {
+            max-width: 100%;
+            min-width: 0;
+        }
+
+        #two .spotlight .content header.major h2 {
+            font-size: clamp(1.15rem, 7vw, 1.4rem) !important;
+            letter-spacing: 0.06em !important;
+            overflow-wrap: anywhere;
+        }
+
+        #Four .html-style-018 a {
+            overflow-wrap: anywhere;
+        }
+
+        details.autres-playlists .playlist-selector.main-genres,
+        details.autres-playlists .playlist-selector.sub-genres {
+            grid-template-columns: 1fr;
+        }
+
+        details.autres-playlists .playlist-selector.main-genres .playlist-tab,
+        details.autres-playlists .playlist-selector.sub-genres .playlist-tab,
+        details.autres-playlists .playlist-selector.sub-genres .playlist-tab:last-child:nth-child(odd) {
+            width: 100%;
+            grid-column: auto;
+            justify-self: stretch;
+        }
+    }
